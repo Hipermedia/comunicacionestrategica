@@ -12,7 +12,6 @@
 	background: none;
 	margin: 0 auto;
 	z-index: 99;
-	position: fixed;
 	left: 0;
 	right: 0;
 	@include transicion();
@@ -20,8 +19,6 @@
 	@media (max-width: $desktop-width) {
 		height: auto;
 		background: none;
-
-		&--tiny { position: relative; }
 	}
 
 	@media (max-width: $tablet-width) {
@@ -29,15 +26,6 @@
 		height: auto;	
 	}
 
-	&--tiny {
-		height: 60px;
-		background: $header-bg;
-
-		@media (max-width: $tablet-width) {
-			height: auto;
-		}
-	}
-	
 	.Header-contenido {
 		display: block;
 		height: 100%;
@@ -71,14 +59,6 @@
 
 				@media (max-width: $tablet-width) {
 					width: 75%;
-				}
-				&.tiny {
-					max-width: 144px;
-
-					@media (max-width: $tablet-width) {
-						height: auto;
-						max-width: 320px;
-					}
 				}
 			}
 		}

@@ -70,7 +70,7 @@
         <?php // get_search_form(); ?>
         
         <!-- Menú principal -->  
-        <?php primalNav(); ?>
+        <?php // primalNav(); ?>
         
     </section>
 </header>

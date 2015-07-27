@@ -14,18 +14,13 @@
 
 get_header(); ?>
 
-	<!-- Cover -->
-	<?php primalCover(); // Cover con imágen de fondo, imagen principal y títulos ?>
+
+<section>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla commodi, molestias laborum porro qui, ipsum, fuga nihil voluptas vitae eveniet eos non voluptatibus? Ratione error ullam officia. Ullam maxime, voluptate fugiat corporis dolore minima facere magnam, impedit nesciunt beatae ut quam, ex possimus eligendi commodi. Ratione temporibus, eius possimus atque soluta debitis molestias eos tempore voluptates expedita iste voluptatibus repellendus, fuga blanditiis asperiores esse, dolore non doloribus nulla accusamus tenetur amet repudiandae illo optio! Asperiores praesentium exercitationem, optio laborum dignissimos ea quo. Laborum sunt ullam cum voluptate sit. Omnis illo illum molestiae perspiciatis explicabo quo temporibus officia, numquam odit cupiditate!</p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla commodi, molestias laborum porro qui, ipsum, fuga nihil voluptas vitae eveniet eos non voluptatibus? Ratione error ullam officia. Ullam maxime, voluptate fugiat corporis dolore minima facere magnam, impedit nesciunt beatae ut quam, ex possimus eligendi commodi. Ratione temporibus, eius possimus atque soluta debitis molestias eos tempore voluptates expedita iste voluptatibus repellendus, fuga blanditiis asperiores esse, dolore non doloribus nulla accusamus tenetur amet repudiandae illo optio! Asperiores praesentium exercitationem, optio laborum dignissimos ea quo. Laborum sunt ullam cum voluptate sit. Omnis illo illum molestiae perspiciatis explicabo quo temporibus officia, numquam odit cupiditate!</p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla commodi, molestias laborum porro qui, ipsum, fuga nihil voluptas vitae eveniet eos non voluptatibus? Ratione error ullam officia. Ullam maxime, voluptate fugiat corporis dolore minima facere magnam, impedit nesciunt beatae ut quam, ex possimus eligendi commodi. Ratione temporibus, eius possimus atque soluta debitis molestias eos tempore voluptates expedita iste voluptatibus repellendus, fuga blanditiis asperiores esse, dolore non doloribus nulla accusamus tenetur amet repudiandae illo optio! Asperiores praesentium exercitationem, optio laborum dignissimos ea quo. Laborum sunt ullam cum voluptate sit. Omnis illo illum molestiae perspiciatis explicabo quo temporibus officia, numquam odit cupiditate!</p>
+</section>
 	
-	<!-- Bloques -->
-	<?php primalBlocks(); //  Bloques de contenido primordiales ?>
-	<?php sauteBlocks();  //  Bloques de contenido salteados ?>
-	
-	<!-- Texto -->
-	<?php primalText(); //  Bloques de contenido primordiales ?>
-	
-	<!-- Testimonios -->
-	<?php primalTestimony(); //  Bloques de contenido primordiales ?>
 
 
 <?php get_footer(); ?>

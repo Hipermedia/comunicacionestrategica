@@ -52,31 +52,63 @@ if( function_exists('acf_add_options_page') ) {
 		// 'redirect'		=> false
 	));
 
+	// cabecera
 	acf_add_options_sub_page(array(
-		'title' 	=> 'General',
-		'parent_slug'	=> 'theme-general-settings',
-	));	
-	acf_add_options_sub_page(array(
-		'title' 	=> 'Portada',
+		'title' 	=> 'Cabecera',
 		'parent_slug'	=> 'theme-general-settings',
 	));
 
+	// banners
 	acf_add_options_sub_page(array(
-		'title' 	=> 'Bloques',
+		'title' 	=> 'Banners',
 		'parent_slug'	=> 'theme-general-settings',
 	));
 
+	// videos y moneros
 	acf_add_options_sub_page(array(
-		'title'	=> 'Texto',
+		'title' 	=> 'Videos y monero',
 		'parent_slug'	=> 'theme-general-settings',
 	));
 
+	// columnistas
 	acf_add_options_sub_page(array(
-		'title' 	=> 'Testimonios',
+		'title' 	=> 'Columnistas',
 		'parent_slug'	=> 'theme-general-settings',
-	));	
+	));
+
+	// Bloques de noticias 
+	acf_add_options_sub_page(array(
+		'title' 	=> 'Bloques de noticias',
+		'parent_slug'	=> 'theme-general-settings',
+	));
+
+	// Columnas de opinion
+	acf_add_options_sub_page(array(
+		'title' 	=> 'Columnas de opinion',
+		'parent_slug'	=> 'theme-general-settings',
+	));
+
+	// Columna hoy
+	acf_add_options_sub_page(array(
+		'title' 	=> 'Columna hoy',
+		'parent_slug'	=> 'theme-general-settings',
+	));
+
+	// Análisis
+	acf_add_options_sub_page(array(
+		'title' 	=> 'Análisis',
+		'parent_slug'	=> 'theme-general-settings',
+	));
+
+	// Contacto
 	acf_add_options_sub_page(array(
 		'title' 	=> 'Contacto',
+		'parent_slug'	=> 'theme-general-settings',
+	));
+
+	// pie
+	acf_add_options_sub_page(array(
+		'title' 	=> 'Pie',
 		'parent_slug'	=> 'theme-general-settings',
 	));
 }

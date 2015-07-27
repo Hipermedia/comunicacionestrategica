@@ -1,0 +1,93 @@
+Cabecera
+	Logo CE						- logoCE					- imagen
+	Logo RR 					- logoRR					- imagen
+
+
+Banners
+	En cabecera 				- bannerHeader				- imagen
+	En portada 												tab
+		Bajo el rotatorio 		- bannerSlider				- imagen
+		Junto al monero 		- bannerMonero				- imagen
+		Bloque de noticias 1	- bannerNoticias1 			- imagen
+		Bloque de noticias 2	- bannerNoticias1 			- imagen
+		Bloque de noticias 3	- bannerNoticias1 			- imagen
+		Bloque de noticias 4	- bannerNoticias1 			- imagen
+		Bloque de noticias 5	- bannerNoticias1 			- imagen
+	Barra lateral
+		Primero					- bannerSidebar1 			- imagen
+		Segundo					- bannerSidebar1 			- imagen
+		Tercero					- bannerSidebar1 			- imagen
+		Cuarto					- bannerSidebar1 			- imagen
+		Quinto					- bannerSidebar1 			- imagen
+
+
+
+Videos y monero
+	Rotatorio de videos 									- tab
+		videos					- videoSlider				- repeater
+			Título				- titulo
+			Video				- video
+
+	Monero del día - tab
+		Caricatura				- caticatura				- imagen	
+
+Columnistas
+	Columnistas 		 									- tab
+		Columnistas 			- colDestacados				- repeater
+			Destacado 			- destacado 				- checkbox
+			Foto 				- imagen
+			Nombre 				- nombre
+			Columna 			- columna 					- relacional a categorias
+			Correo 				- correo
+			Facebook			- facebook
+			Twitter 			- twitter
+
+Bloques de noticias  
+	Categoría del 1° bloque   	- bloqueNoticias1			- relacional a categoria (solo una)
+	Categoría del 2° bloque   	- bloqueNoticias2			- relacional a categoria (solo una)
+	Categoría del 3° bloque   	- bloqueNoticias3			- relacional a categoria (solo una)
+	Categoría del 4° bloque   	- bloqueNoticias4			- relacional a categoria (solo una)
+	Categoría del 5° bloque   	- bloqueNoticias5			- relacional a categoria (solo una)
+	Categoría del 6° bloque   	- bloqueNoticias6			- relacional a categoria (solo una)
+	Categoría del 7° bloque   	- bloqueNoticias7			- relacional a categoria (solo una)
+
+
+Columnas de opinion										- tab
+	Nombre pestaña 1		- colOpinionTab1Nombre			
+	Categoría pestaña 1		- colOpinionTab1Categoria	- relacional a categoria (solo una)
+	Nombre pestaña 2		- colOpinionTab2Nombre			
+	Categoría pestaña 2		- colOpinionTab2Categoria	- relacional a categoria (solo una)
+	Nombre pestaña 3		- colOpinionTab1Nombre			
+	Categoría pestaña 3		- colOpinionTab1Categoria 	- relacional a categoria (solo una)
+
+	
+
+Columna hoy												
+	Título 				 		- colHoyTitulo 
+	Foto del columnistas 		- colHoyImagen				- imagen
+	Nombre del columnista 		- colHoyNombre
+	Contenido			 		- colHoyContenido			- wysiwyg
+
+
+Análisis 												- tab
+	Diapositívas			- analisisElectoral			- repeater (Límite máximo de 4)
+		Titulo 				- titulo 					
+		Imágen 				- imagen 					- imagen
+		Análisis 			- analisis 					- wysiwyg
+
+Contacto
+	Teléfono 					- telefono	
+	WhatsApp 					- whatsapp
+	Correo electrónico 			- correo
+	Redes Sociales 											- tab
+		Facebook				- fbCE	
+		Twitter					- twCE
+		Google Plus				- gpCE
+		Youtube					- ytCE
+
+Pie 
+	Descripción CE 				- footerDescripcion 		- textarea
+	Logo CE en el footer 		- footerLogoCE				- imagen
+	Logo CE en el footer 		- footerLogoRR				- imagen
+	Aviso legal 				- avisoLegal 				- wysiwyg
+	Políticas de privacidad 	- politicasPriv 			- wysiwyg
