@@ -60,12 +60,11 @@
         
         <!-- Logo CE-->
         <a href="<?php inicio_url(); ?>" id="logo-ce" class="Header-logoCE">
-            <img src="<?php the_field('logo', 'option'); ?>" alt="<?php bloginfo('name'); ?>">
+            <img src="<?php the_field('logoCE', 'option'); ?>" alt="<?php bloginfo('name'); ?>">
         </a>
-
         <!-- Logo RR-->
         <a href="<?php inicio_url(); ?>" id="logo-rr" class="Header-logoRR">
-            <img src="<?php the_field('logo', 'option'); ?>" alt="<?php bloginfo('name'); ?>">
+            <img src="<?php the_field('logoRR', 'option'); ?>" alt="<?php bloginfo('name'); ?>">
         </a>
 
                
