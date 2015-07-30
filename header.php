@@ -58,19 +58,29 @@
 <header id="header" class="Header" role="banner" >
     <section class="Header-contenido">
         
-        <!-- Logo -->
-        <a href="<?php inicio_url(); ?>" id="header-logo" class="Header-logo  animated flipInX">
+        <!-- Logo CE-->
+        <a href="<?php inicio_url(); ?>" id="logo-ce" class="Header-logoCE">
             <img src="<?php the_field('logo', 'option'); ?>" alt="<?php bloginfo('name'); ?>">
         </a>
 
-        <!-- Redes sociales -->
-        <?php primalSocialShare(); ?>
-        
+        <!-- Logo RR-->
+        <a href="<?php inicio_url(); ?>" id="logo-rr" class="Header-logoRR">
+            <img src="<?php the_field('logo', 'option'); ?>" alt="<?php bloginfo('name'); ?>">
+        </a>
+
+               
         <!-- Formulario de búsqueda [Catacterística superior] -->
         <?php // get_search_form(); ?>
         
         <!-- Menú principal -->  
         <?php // primalNav(); ?>
+
+        <!-- Bloque header -->
+        <aside class="Header-bloqueUtilitario">
+            <!-- Redes sociales -->
+            <?php primalSocialShare(); ?>
+        </aside>
+
         
     </section>
 </header>

@@ -133,43 +133,147 @@ function get_plantilla_url() {
 /* BLOQUES
  * ------------------------------------------------------------- */
 
-/* Navegación
+/* Navegación   
  * ------------------------------------------------------------- */
 /* PRIMAL; navegación principal */
 function primalNav() {
 	get_template_part( 'inc/nav/primal-nav');
 }
 
-/* Cover
+/* Newsletter
  * ------------------------------------------------------------- */
-/* PRIMAL; cover */
-function primalCover() {
-	get_template_part( 'inc/cover/primal-cover');
+function newsletter() {
+	get_template_part( 'inc/newsletter');
 }
 
-/* Bloques
+/* Cover slider
  * ------------------------------------------------------------- */
-/* PRIMAL; bloques */
-function primalBlocks() {
-	get_template_part( 'inc/blocks/primal-blocks');
-}
-/* SAUTE; bloques */
-function sauteBlocks() {
-	get_template_part( 'inc/blocks/saute-blocks');
+function coverSlider() {
+	get_template_part( 'inc/cover-slider');
 }
 
-/* Texto
+
+
+/* Banners
  * ------------------------------------------------------------- */
-/* PRIMAL; texto */
-function primalText() {
-	get_template_part( 'inc/text/primal-text');
+/* En cabecera */
+function bannerHeader() {
+	get_template_part( 'inc/banners/header-banner');
+}
+/* Bajo el rotatorio */
+function bannerSlider() {
+	get_template_part( 'inc/banners/cover-banner-slider');
+}
+/* Junto al monero */
+function bannerMonero() {
+	get_template_part( 'inc/banners/cover-banner-monero');
+}
+/* Bloque de noticias 1 */
+function bannerNoticias1() {
+	get_template_part( 'inc/banners/cover-banner-noticias1');
+}
+/* Bloque de noticias 2 */
+function bannerNoticias2() {
+	get_template_part( 'inc/banners/cover-banner-noticias2');
+}
+/* Bloque de noticias 3 */
+function bannerNoticias3() {
+	get_template_part( 'inc/banners/cover-banner-noticias3');
+}
+/* Bloque de noticias 4 */
+function bannerNoticias4() {
+	get_template_part( 'inc/banners/cover-banner-noticias4');
+}
+/* Bloque de noticias 5 */
+function bannerNoticias5() {
+	get_template_part( 'inc/banners/cover-banner-noticias4');
+}
+/* Sidebar 1 */
+function bannerSidebar1() {
+	get_template_part( 'inc/banners/sidebar1');
+}
+/* Sidebar 2 */
+function bannerSidebar2() {
+	get_template_part( 'inc/banners/sidebar2');
+}
+/* Sidebar 3 */
+function bannerSidebar3() {
+	get_template_part( 'inc/banners/sidebar3');
+}
+/* Sidebar 4 */
+function bannerSidebar4() {
+	get_template_part( 'inc/banners/sidebar4');
+}
+/* Sidebar 5 */
+function bannerSidebar5() {
+	get_template_part( 'inc/banners/sidebar5');
 }
 
-/* Testimonios
+/* Videos y monero
  * ------------------------------------------------------------- */
-/* PRIMAL; testimonios */
-function primalTestimony() {
-	get_template_part( 'inc/testimony/primal-testimony');
+/* Rotatorio de videos  */
+function videoSlider() {
+	get_template_part( 'inc/rotatotio-videos');
+}
+/* ANLI; social share buttons */
+function monero() {
+	get_template_part( 'inc/monero');
+}
+
+/* Columnistas destacados
+ * ------------------------------------------------------------- */
+function colDestacados() {
+	get_template_part( 'inc/columnistas-destacados');
+}
+
+/* Bloques de noticias
+ * ------------------------------------------------------------- */
+/* Bloque noticias 1 */
+function bloqueNoticias1() {
+	get_template_part( 'inc/noticias/portada1');
+}
+/* Bloque noticias 2 */
+function bloqueNoticias2() {
+	get_template_part( 'inc/noticias/portada2');
+}
+/* Bloque noticias 3 */
+function bloqueNoticias3() {
+	get_template_part( 'inc/noticias/portada3');
+}
+/* Bloque noticias 4 */
+function bloqueNoticias4() {
+	get_template_part( 'inc/noticias/portada4');
+}
+/* Bloque noticias 5 */
+function bloqueNoticias5() {
+	get_template_part( 'inc/noticias/portada5');
+}
+/* Bloque noticias 6 */
+function bloqueNoticias6() {
+	get_template_part( 'inc/noticias/portada6');
+}
+/* Bloque noticias 7 */
+function bloqueNoticias7() {
+	get_template_part( 'inc/noticias/portada7');
+}
+
+
+/* Columnas de opinion
+ * ------------------------------------------------------------- */
+function columnasOpinion() {
+	get_template_part( 'inc/sidebar-opinion');
+}
+
+/* Columna hoy
+ * ------------------------------------------------------------- */
+function columnaHoy() {
+	get_template_part( 'inc/sidebar-columna-hoy');
+}
+
+/* Análisis
+ * ------------------------------------------------------------- */
+function analisis() {
+	get_template_part( 'inc/sidebar-analisis');
 }
 
 /* Redes sociales
@@ -182,6 +286,9 @@ function primalSocialShare() {
 function anliSocialShare() {
 	get_template_part( 'inc/social/anli-socialshare');
 }
+
+
+
 
 
 

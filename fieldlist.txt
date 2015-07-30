@@ -1,37 +1,37 @@
-Cabecera
+Cabecera 															 	[header.php]
 	Logo CE						- logoCE					- imagen
 	Logo RR 					- logoRR					- imagen
 
 
 Banners
-	En cabecera 				- bannerHeader				- imagen
-	En portada 												tab
-		Bajo el rotatorio 		- bannerSlider				- imagen
-		Junto al monero 		- bannerMonero				- imagen
-		Bloque de noticias 1	- bannerNoticias1 			- imagen
-		Bloque de noticias 2	- bannerNoticias1 			- imagen
-		Bloque de noticias 3	- bannerNoticias1 			- imagen
-		Bloque de noticias 4	- bannerNoticias1 			- imagen
-		Bloque de noticias 5	- bannerNoticias1 			- imagen
-	Barra lateral
-		Primero					- bannerSidebar1 			- imagen
-		Segundo					- bannerSidebar1 			- imagen
-		Tercero					- bannerSidebar1 			- imagen
-		Cuarto					- bannerSidebar1 			- imagen
-		Quinto					- bannerSidebar1 			- imagen
+	En cabecera 				- bannerHeader				- imagen 	[banners/header-banner.php]
+	En portada 											tab
+		Bajo el rotatorio 		- bannerSlider				- imagen 	[banners/cover-banner-slider.php]	
+		Junto al monero 		- bannerMonero				- imagen 	[banners/cover-banner-monero.php]	
+		Bloque de noticias 1	- bannerNoticias1 			- imagen 	[banners/cover-banner-noticias1.php]	
+		Bloque de noticias 2	- bannerNoticias1 			- imagen 	[banners/cover-banner-noticias2.php]	
+		Bloque de noticias 3	- bannerNoticias1 			- imagen 	[banners/cover-banner-noticias3.php]	
+		Bloque de noticias 4	- bannerNoticias1 			- imagen 	[banners/cover-banner-noticias4.php]	
+		Bloque de noticias 5	- bannerNoticias1 			- imagen 	[banners/cover-banner-noticias5.php]	
+	Barra lateral [sidebar-banner]	
+		Primero					- bannerSidebar1 			- imagen 	[banners/sidebar1.php] 
+		Segundo					- bannerSidebar1 			- imagen 	[banners/sidebar2.php]
+		Tercero					- bannerSidebar1 			- imagen 	[banners/sidebar3.php]
+		Cuarto					- bannerSidebar1 			- imagen 	[banners/sidebar4.php]
+		Quinto					- bannerSidebar1 			- imagen 	[banners/sidebar5.php]
 
 
 
 Videos y monero
-	Rotatorio de videos 									- tab
-		videos					- videoSlider				- repeater
+	Rotatorio de videos 									- tab    	[rotatotio-videos.php] 
+		videos					- videoSlider				- repeater  
 			Título				- titulo
 			Video				- video
 
 	Monero del día - tab
-		Caricatura				- caticatura				- imagen	
+		Caricatura				- caticatura				- imagen	[monero.php]
 
-Columnistas
+columnistas 															
 	Columnistas 		 									- tab
 		Columnistas 			- colDestacados				- repeater
 			Destacado 			- destacado 				- checkbox
@@ -42,40 +42,40 @@ Columnistas
 			Facebook			- facebook
 			Twitter 			- twitter
 
-Bloques de noticias  
-	Categoría del 1° bloque   	- bloqueNoticias1			- relacional a categoria (solo una)
-	Categoría del 2° bloque   	- bloqueNoticias2			- relacional a categoria (solo una)
-	Categoría del 3° bloque   	- bloqueNoticias3			- relacional a categoria (solo una)
-	Categoría del 4° bloque   	- bloqueNoticias4			- relacional a categoria (solo una)
-	Categoría del 5° bloque   	- bloqueNoticias5			- relacional a categoria (solo una)
-	Categoría del 6° bloque   	- bloqueNoticias6			- relacional a categoria (solo una)
-	Categoría del 7° bloque   	- bloqueNoticias7			- relacional a categoria (solo una)
+Bloques de noticias  													
+	Categoría del 1° bloque   	- bloqueNoticias1			- relacional a categoria (solo una) [noticias/portada1.php]
+	Categoría del 2° bloque   	- bloqueNoticias2			- relacional a categoria (solo una) [noticias/portada2.php]
+	Categoría del 3° bloque   	- bloqueNoticias3			- relacional a categoria (solo una) [noticias/portada3.php]
+	Categoría del 4° bloque   	- bloqueNoticias4			- relacional a categoria (solo una) [noticias/portada4.php]
+	Categoría del 5° bloque   	- bloqueNoticias5			- relacional a categoria (solo una) [noticias/portada5.php]
+	Categoría del 6° bloque   	- bloqueNoticias6			- relacional a categoria (solo una) [noticias/portada6.php]
+	Categoría del 7° bloque   	- bloqueNoticias7			- relacional a categoria (solo una) [noticias/portada7.php]
 
 
-Columnas de opinion										- tab
-	Nombre pestaña 1		- colOpinionTab1Nombre			
+Columnas de opinion		columnasOpinion								- tab 			[sidebar-opinion.php]
+	Nombre pestaña 1		- 			
 	Categoría pestaña 1		- colOpinionTab1Categoria	- relacional a categoria (solo una)
-	Nombre pestaña 2		- colOpinionTab2Nombre			
+	Nombre pestaña 2		- 			
 	Categoría pestaña 2		- colOpinionTab2Categoria	- relacional a categoria (solo una)
-	Nombre pestaña 3		- colOpinionTab1Nombre			
+	Nombre pestaña 3		- 			
 	Categoría pestaña 3		- colOpinionTab1Categoria 	- relacional a categoria (solo una)
 
 	
 
-Columna hoy												
+Columna hoy																[sidebar-columna-hoy.php]
 	Título 				 		- colHoyTitulo 
 	Foto del columnistas 		- colHoyImagen				- imagen
 	Nombre del columnista 		- colHoyNombre
 	Contenido			 		- colHoyContenido			- wysiwyg
 
 
-Análisis 												- tab
+Análisis 												- tab 			[sidebar-analisis.php]
 	Diapositívas			- analisisElectoral			- repeater (Límite máximo de 4)
 		Titulo 				- titulo 					
 		Imágen 				- imagen 					- imagen
 		Análisis 			- analisis 					- wysiwyg
 
-Contacto
+Contacto 
 	Teléfono 					- telefono	
 	WhatsApp 					- whatsapp
 	Correo electrónico 			- correo
@@ -91,3 +91,11 @@ Pie
 	Logo CE en el footer 		- footerLogoRR				- imagen
 	Aviso legal 				- avisoLegal 				- wysiwyg
 	Políticas de privacidad 	- politicasPriv 			- wysiwyg
+
+
+
+/* --- Otros bloques --- */
+[newsletter.php]
+[columnistas-destacados.php]
+[cover-slider.php]
+[nav.php]
