@@ -66,19 +66,25 @@
         <a href="<?php inicio_url(); ?>" id="logo-rr" class="Header-logoRR">
             <img src="<?php the_field('logoRR', 'option'); ?>" alt="<?php bloginfo('name'); ?>">
         </a>
-
                
         <!-- Formulario de búsqueda [Catacterística superior] -->
-        <?php // get_search_form(); ?>
+        <?php get_search_form(); ?>
+        
+        <!-- Banner -->
+        <aside class="Header-bloqueInferior">
+            
+            <?php bannerHeader(); ?>
+            
+            <!-- Bloque utilitario -->
+            <div class="Header-bloqueUtilitario">
+                <!-- Redes sociales -->
+                <?php primalSocialShare(); ?>
+            </div>
+
+        </aside>
         
         <!-- Menú principal -->  
-        <?php // primalNav(); ?>
-
-        <!-- Bloque header -->
-        <aside class="Header-bloqueUtilitario">
-            <!-- Redes sociales -->
-            <?php primalSocialShare(); ?>
-        </aside>
+        <?php //primalNav(); ?>
 
         
     </section>

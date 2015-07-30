@@ -1,4 +1,22 @@
 /*------------------------------------------------*/
-/*------------------[BLOCKS]----------------------*/
+/*---------------[COVER SLIDER]-------------------*/
 /*------------------------------------------------*/
 
+.CoverSlider {
+	position: relative;
+	overflow: visible;
+
+	.CoverSlider-slide {
+
+			.CoverSlider-slideImage {
+				width: 80%;
+				float: left;
+				display: block;
+			}
+			.CoverSlider-slideCaption {
+				width: 20%;
+				float: left;
+				display: block;
+			}
+	}
+}

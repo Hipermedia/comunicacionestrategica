@@ -1,6 +1,6 @@
 jQuery(document).ready(function($) {
 
-	// Versión responsive del menú; oculta la navegación y en su defecto aparece un botón para mostrar u ocultarl la navegación
+	//Versión responsive del menú; oculta la navegación y en su defecto aparece un botón para mostrar u ocultarl la navegación
 	$('.toggle-nav').click(function(e) {
         $(this).toggleClass('activo');
         $('#header-main-nav ul').toggleClass('activo'); 
@@ -13,11 +13,20 @@ jQuery(document).ready(function($) {
 
 
 	//Agrega una animación al hacer scroll al llegar a un elemento gracias a waypoints
-
 	$('.titulo').waypoint(function(direction) {
 	  $('.titulo').addClass( 'fadeInUp animated' );
 	},{
 	  offset:'20%'
 	});
 
+
+
+	/* FLEXSLIDER; #cover-slider
+	--------------------------------------------*/
+	$('#cover-slider').flexslider({
+		animation: "slide",
+	    controlNav: "thumbnails"
+	});
+
 });
+

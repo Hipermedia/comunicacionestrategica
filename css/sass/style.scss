@@ -15,10 +15,10 @@ Version: 1.0
 ------------------------------------------*/
 @import "support/_normalize.scss"; /* Normalizador CSS entre navegadores */
 // @import "support/_animate.scss"; /* Librería de animaciones CSS */
-@import "support/_bootstrap.scss"; /* Bootstrap */
+//@import "support/_bootstrap.scss"; /* Bootstrap */
 @import "support/_font-awesome.scss"; /* Bootstrap */
-// @import "support/bootstrap-theme.scss"; /* Bootstrap Theme */
-// @import "support/_fonts.scss"; /* Open Sans */
+@import "support/_flexslider.scss"; /* Flexslider */
+
 
 /* Base
 ------------------------------------------*/
