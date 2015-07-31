@@ -23,6 +23,7 @@ jQuery(document).ready(function($) {
 
 	/* FLEXSLIDER; #cover-slider
 	--------------------------------------------*/
+<<<<<<< HEAD
 
 
 	$('#cover-slider-thumb-nav').flexslider({
@@ -41,5 +42,12 @@ jQuery(document).ready(function($) {
 		slideshow: false,
 		sync: "#cover-slider-thumb-nav"
 	});
+=======
+	$('#cover-slider').flexslider({
+		animation: "slide",
+	    controlNav: "thumbnails"
+	});
+
+>>>>>>> bb1ec99976a2b6c22f68976d0b863ba1a7ed6648
 });
 

@@ -58,12 +58,15 @@ if( function_exists('acf_add_options_page') ) {
 		'parent_slug'	=> 'theme-general-settings',
 	));
 
+<<<<<<< HEAD
 	// slider
 	acf_add_options_sub_page(array(
 		'title' 	=> 'Rotatorio',
 		'parent_slug'	=> 'theme-general-settings',
 	));
 
+=======
+>>>>>>> bb1ec99976a2b6c22f68976d0b863ba1a7ed6648
 	// banners
 	acf_add_options_sub_page(array(
 		'title' 	=> 'Banners',

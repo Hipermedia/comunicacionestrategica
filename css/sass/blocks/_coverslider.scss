@@ -2,6 +2,7 @@
 /*---------------[COVER SLIDER]-------------------*/
 /*------------------------------------------------*/
 
+<<<<<<< HEAD
 
 
 .CoverSlider {
@@ -64,5 +65,23 @@
 			margin: 0 .3%;
 			width: 24.2%;
 		}
+=======
+.CoverSlider {
+	position: relative;
+	overflow: visible;
+
+	.CoverSlider-slide {
+
+			.CoverSlider-slideImage {
+				width: 80%;
+				float: left;
+				display: block;
+			}
+			.CoverSlider-slideCaption {
+				width: 20%;
+				float: left;
+				display: block;
+			}
+>>>>>>> bb1ec99976a2b6c22f68976d0b863ba1a7ed6648
 	}
 }
