@@ -57,6 +57,8 @@ h1, h2, h3, h4, h5, h6 {
 	clear: both;
 	width: $desktop-width;
 	margin: 0 auto;
+	padding: 0 .5rem;
+	background: $content-bg;
 
 	@media (max-width: $desktop-width) {
 		max-width: $desktop-width;

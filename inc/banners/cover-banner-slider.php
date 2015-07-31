@@ -3,9 +3,10 @@
 ------------------------------------------------------------------- */ 
 ?>
 
-<!-- cover-banner-slider -->
+
 <aside class="">
 	<figure>
 		<img src="" alt="">
+		banner slider
 	</figure>
 </aside>

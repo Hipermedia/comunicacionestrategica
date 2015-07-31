@@ -3,7 +3,6 @@
 ------------------------------------------------------------------- */ 
 ?>
 
-<!-- cover-slider -->
 <section class="CoverSlider">	
 	<div id="cover-slider" class="flexslider">
 	  	<ul class="slides">

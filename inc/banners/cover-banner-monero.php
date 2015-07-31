@@ -7,5 +7,6 @@
 <aside class="">
 	<figure>
 		<img src="" alt="">
+		banner junto al monero
 	</figure>
 </aside>

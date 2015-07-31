@@ -7,5 +7,6 @@
 <aside class="">
 	<figure>
 		<img src="" alt="">
+		header banner
 	</figure>
 </aside>

@@ -3,6 +3,6 @@
 ------------------------------------------------------------------- */ 
 ?>
 <!-- portada1 -->
-<section class="BloqueNoticias-portada7">
-
+<section class="Noticias-bloquePortada7">
+	bloque de noticias 7
 </section>

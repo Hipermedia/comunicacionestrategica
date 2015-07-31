@@ -3,9 +3,9 @@
 ------------------------------------------------------------------- */ 
 ?>
 
-<!-- cover-sidebar2 -->
 <aside class="">
 	<figure>
 		<img src="" alt="">
+		banner sidebar 2
 	</figure>
 </aside>
