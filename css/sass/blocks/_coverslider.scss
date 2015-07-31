@@ -1,0 +1,68 @@
+/*------------------------------------------------*/
+/*---------------[COVER SLIDER]-------------------*/
+/*------------------------------------------------*/
+
+
+
+.CoverSlider {
+	position: relative;
+	overflow: visible;
+	
+	.flex-viewport { background: #4A4A4A; }
+	.flexslider { margin: 0; }
+
+	.CoverSlider-slide {
+		/*background: #4A4A4A;*/
+
+		.CoverSlider-slideImage {
+			width: 70%;
+			float: left;
+			display: block;
+		}
+		.CoverSlider-slideCaption {
+			color: #F2F2F2;
+			padding: 1.2rem 1rem;
+			width: 30%;
+			/*min-height: 625px;*/
+			/*max-height: 625px;*/
+			background: #4A4A4A;
+			float: left;
+			display: block;
+
+			.CoverSlider-slideDescription {
+				font-size: 1.3rem;
+				margin-bottom: 3rem;
+			}
+
+			.btn {
+				cursor: pointer;
+				color: white;
+				border-radius: 2px;
+				width: 80%;
+				display: block;
+				background: #666666;
+				margin: 0 auto;
+				text-align: center;
+				font-weight: bold;
+			}
+		}
+	}
+
+	.flex-control-nav {
+		margin: 0;
+		/*width: auto;*/
+		/*position: absolute;*/
+		bottom: 0;
+		/*max-height: 112px;*/
+		background: #C2C2C2;
+		/*text-align: center;*/
+
+		li {
+			/*float: none;*/
+			/*display: inline-block;*/
+			padding-top: .5rem;
+			margin: 0 .3%;
+			width: 24.2%;
+		}
+	}
+}

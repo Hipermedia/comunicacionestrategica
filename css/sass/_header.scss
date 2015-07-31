@@ -1,0 +1,130 @@
+/*------------------------------------------------*/
+/*-----------------[HEADER]-----------------------*/
+/*------------------------------------------------*/
+.Header { 
+	width: $desktop-width;
+	position: relative;
+	clear: both;
+	display: block;
+	height: auto;
+	background: #fff;
+	margin: 0 auto;
+	overflow: hidden;
+	@include transicion();
+	
+	@media (max-width: $desktop-width) {
+		width: 100%;
+	}
+
+	.Header-contenido {
+		display: block;
+		width: 100%;
+		height: 100%;
+
+		/* Logo CE */
+		.Header-logoCE {
+			display: block;
+			float: left;
+			max-width: 730px;
+
+			@media (max-width: $tablet-width) {
+				max-width: 100%;
+				width: 100%;
+				text-align: center;
+				padding: 1rem 0;
+			}
+			img {
+				max-width: 730px;
+				@include transicion();
+
+				@media (max-width: $tablet-width) {
+					width: 75%;
+				}
+			}
+		}
+		/* Logo CE */
+		.Header-logoRR {
+			padding: .5rem 1rem;
+			display: block;
+			float: left;
+			max-width: 420px;
+
+			@media (max-width: $tablet-width) {
+				max-width: 100%;
+				width: 100%;
+				text-align: center;
+				padding: 1rem 0;
+			}
+			img {
+				max-width: 420px;
+				@include transicion();
+
+				@media (max-width: $tablet-width) {
+					width: 75%;
+				}
+			}
+		}
+		/* Botones Sociales */
+		.social {
+			float: right;
+			padding: .5rem 1em;	
+
+			@media (max-width: $tablet-width) {
+				width: 100%;
+				clear: both;
+				text-align: center;
+			}
+		}
+		/* Search Form */
+		#searchform {
+			float: right;
+			padding: .5rem 1em;
+			@include transicion();
+
+			@media (max-width: $tablet-width) {
+				display: none;
+			}
+			
+			div { margin: 0; }
+			label { display: none; }
+		}
+		
+		 #s {
+			float: right;
+			@include transicion();
+			width: 90px;
+		}
+		#s:focus {
+			background-color: #f9f9f9;
+			width: 196px;
+		}
+		#searchsubmit {
+			display: none;
+		}
+		.only-search #searchform {
+			top: 5px;
+			z-index: 1;
+		}
+		.only-search #s {
+			background-color: #666;
+			border-color: #000;
+			color: #222;
+		}
+		.only-search #s,
+		.only-search #s:focus {
+			width: 85%;
+		}
+		.only-search #s:focus {
+			background-color: #bbb;
+		}
+		.with-image #searchform {
+			top: auto;
+			bottom: -27px;
+			max-width: 195px;
+		}
+		.only-search + #access div {
+			padding-right: 205px;
+		}
+		
+	}
+}
