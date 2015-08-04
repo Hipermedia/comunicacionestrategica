@@ -1,3 +1,71 @@
 /*------------------------------------------------*/
 /*------------------[	]----------------------*/
 /*------------------------------------------------*/
+
+.SidebarOpinion {
+	padding-left: .5rem;
+	padding-top: 2.3rem;
+
+	.h2 {
+		background: #C2C2C2;
+		margin: 0;
+		color: #FEFEFE;
+	}
+
+	.SidebarOpinion-tabs {
+		background: #8A8A8A;
+
+		li.active {
+			background: #EBEBEB;
+
+			a { 
+				background: none; 
+				border: none;
+				color: #8A8A8A;
+				font-weight: bold;  
+			}
+		}
+
+		li {
+
+			a {
+				border: none;
+				margin: 0;
+				color: #FAFAFA;
+			}
+
+			a:hover {
+				border-radius: 0;
+				border: none;
+			}
+		}
+	}
+	
+	.tab-content {
+		background: #EBEBEB;
+
+		.SidebarOpinion-ficha {
+			width: 100%;
+			display: inline-block;
+
+			figure {
+				text-align: center;
+				background: #CFCFCF;
+				width: 20%;
+				float: left;
+				margin: 5%;
+
+				i {
+					color: #999999;
+					font-size: 5rem;
+				}
+			}
+
+			h2,p {
+				margin: 0;
+				width: 70%;
+				float: left;
+			}
+		}
+	}
+}
