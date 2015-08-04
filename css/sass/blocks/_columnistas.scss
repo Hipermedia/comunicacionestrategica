@@ -4,30 +4,50 @@
 
 .ColumnistasDestacados {
 	background: #9C9C9C;
-
+	
+	h4 {
+		background: #4A4A4A;
+		color: #EAEAEA;
+		margin: 0;
+		text-align: center;
+		padding: .3rem 0;
+		font-size: 1.6rem;
+	}
 	.wrapper {
-		width: 1200px;
 		display: block;
 		margin: 0 auto;
-		padding: 0 4rem;
+		width: 1200px;
+		padding: 0 .8rem;
 
-		h3 {
-			background: #4A4A4A;
-			margin: 0;
-			padding: .5rem;
-			color: white;
-		}
-		#cover-slider-columnistas {
-			margin: 0;
-			border: none;
-			background: inherit;
+		#cover-slider-columnistas { background: #9C9C9C; border: none; margin: 0; padding: 1rem 3rem;}
+
+		li {
+			/*margin: 0 .8rem;*/
+
+			figure {
+				/*margin-right: 3rem;*/
+				background: #EBEBEB;
+				width: 100%;
+				display: block;
+				text-align: center;
+
+				i {
+					color: #9C9C9C;
+					font-size: 13rem;
+				}
+			}
+			
+			h2,h3 { margin: 0; padding: .4rem 0 .4rem .3rem; }
+
+			.ColumnistasDestacados-nota {
+				color: #FEFEFE;
+				
+			}
 
 			.ColumnistasDestacados-nombre {
-				margin: 0;
-				background: #BFBFBF;
-				padding-left: 2rem;
+				color: #C5C5C5;
+
 			}
 		}
 	}
-
 }

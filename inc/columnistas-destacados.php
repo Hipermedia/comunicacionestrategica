@@ -4,18 +4,74 @@
 ?>
 <!-- columnistas-destacados -->
 <section class="ColumnistasDestacados">
+	<h4>Opinión</h3>
 	<div class="wrapper">
-		<h3>Opinión</h3>
 		<div id="cover-slider-columnistas" class="flexslider">
 		  	<ul class="slides">
-		  		<?php while(have_rows('colDestacados','option')) : the_row(); ?>
 		  		<li>
-		  			<img src="<?php the_sub_field('imagen','option'); ?>" alt="">
-		  			<h3 class="ColumnistasDestacados-nombre"><?php the_sub_field('nombre','option'); ?></h3>
+		  			<figure class="ColumnistasDestacados-figure">
+		  				<i class="fa fa-user"></i>
+		  				<!-- <img src="<?php //echo get_plantilla_url()."/images/foto-columnista.jpg"; ?>" alt=""> -->
+		  			</figure>
+		  			<h2 class="ColumnistasDestacados-nota">Título del artículo</h2>
+		  			<h3 class="ColumnistasDestacados-nombre">Nombre del columnista</h3>
 		  		</li>
-		  		<!-- <div> -->
-		  		<!-- </div> -->
-		  		<?php endwhile; ?>
+		  		<li>
+		  			<figure class="ColumnistasDestacados-figure">
+		  				<i class="fa fa-user"></i>
+		  				<!-- <img src="" alt=""> -->
+		  			</figure>
+		  			<h2 class="ColumnistasDestacados-nota">Título del artículo</h2>
+		  			<h3 class="ColumnistasDestacados-nombre">Nombre del columnista</h3>
+		  		</li>
+		  		<li>
+		  			<figure class="ColumnistasDestacados-figure">
+		  				<i class="fa fa-user"></i>
+		  				<!-- <img src="" alt=""> -->
+		  			</figure>
+		  			<h2 class="ColumnistasDestacados-nota">Título del artículo</h2>
+		  			<h3 class="ColumnistasDestacados-nombre">Nombre del columnista</h3>
+		  		</li>
+		  		<li>
+		  			<figure class="ColumnistasDestacados-figure">
+		  				<i class="fa fa-user"></i>
+		  				<!-- <img src="" alt=""> -->
+		  			</figure>
+		  			<h2 class="ColumnistasDestacados-nota">Título del artículo</h2>
+		  			<h3 class="ColumnistasDestacados-nombre">Nombre del columnista</h3>
+		  		</li>
+		  		<li>
+		  			<figure class="ColumnistasDestacados-figure">
+		  				<i class="fa fa-user"></i>
+		  				<!-- <img src="" alt=""> -->
+		  			</figure>
+		  			<h2 class="ColumnistasDestacados-nota">Título del artículo</h2>
+		  			<h3 class="ColumnistasDestacados-nombre">Nombre del columnista</h3>
+		  		</li>
+		  		<li>
+		  			<figure class="ColumnistasDestacados-figure">
+		  				<i class="fa fa-user"></i>
+		  				<!-- <img src="" alt=""> -->
+		  			</figure>
+		  			<h2 class="ColumnistasDestacados-nota">Título del artículo</h2>
+		  			<h3 class="ColumnistasDestacados-nombre">Nombre del columnista</h3>
+		  		</li>
+		  		<li>
+		  			<figure class="ColumnistasDestacados-figure">
+		  				<i class="fa fa-user"></i>
+		  				<!-- <img src="" alt=""> -->
+		  			</figure>
+		  			<h2 class="ColumnistasDestacados-nota">Título del artículo</h2>
+		  			<h3 class="ColumnistasDestacados-nombre">Nombre del columnista</h3>
+		  		</li>
+		  		<li>
+		  			<figure class="ColumnistasDestacados-figure">
+		  				<i class="fa fa-user"></i>
+		  				<!-- <img src="" alt=""> -->
+		  			</figure>
+		  			<h2 class="ColumnistasDestacados-nota">Título del artículo</h2>
+		  			<h3 class="ColumnistasDestacados-nombre">Nombre del columnista</h3>
+		  		</li>
 		  	</ul>
 		</div>
 	</div>
