@@ -1,6 +1,33 @@
 /*------------------------------------------------*/
 /*------------------[MONERO Y VIDEOS]-------------*/
 /*------------------------------------------------*/
-.Monero {
 
+.RotatorioVideos {
+	float: left;
+	width: 33%;
 }
+
+.Monero {
+	float: left;
+	width: 33%;
+	background: #C2C2C2;
+
+	.Monero-figure {
+		margin: 0;
+	}
+
+	.Monero-botonMas {
+		background: #4A4A4A;
+		text-align: center;
+		width: 80%;
+		margin: 0 auto;
+		display: block;
+		margin-top: .2rem;
+		margin-bottom: .5rem;
+		border-radius: 3px;
+		padding: .3rem;
+		color: white;
+		font-weight: bold;
+	}
+}
+

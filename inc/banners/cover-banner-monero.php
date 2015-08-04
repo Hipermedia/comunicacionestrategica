@@ -4,9 +4,8 @@
 ?>
 
 <!-- cover-banner-monero -->
-<aside class="">
+<aside class="BannerMonero">
 	<figure>
-		<img src="" alt="">
-		banner junto al monero
+		<img src="<?php the_field('bannerMonero','option'); ?>" alt="">
 	</figure>
 </aside>

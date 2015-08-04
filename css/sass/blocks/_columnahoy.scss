@@ -1,3 +1,33 @@
 /*------------------------------------------------*/
 /*------------------[	]----------------------*/
 /*------------------------------------------------*/
+
+.SidebarColumnaHoy {
+	background: #EBEBEB;
+
+	p {
+		font-size: 2rem;
+		margin: 0;
+		padding: 1rem .5rem;
+		background: #C2C2C2;
+	}
+
+	figure {
+		float: left;
+		width: 25%;
+		padding: .5rem;
+
+		img {
+			border-radius: 5px;
+		}
+	}
+
+	h2,h3 { margin: 0; padding: .6rem 0; }
+
+	.SidebarColumnaHoy-contenido {
+		width: 100%;
+		background: #DBDBDB;
+		overflow: auto;
+		height: 250px;
+	}
+}

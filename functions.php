@@ -58,15 +58,12 @@ if( function_exists('acf_add_options_page') ) {
 		'parent_slug'	=> 'theme-general-settings',
 	));
 
-<<<<<<< HEAD
 	// slider
 	acf_add_options_sub_page(array(
 		'title' 	=> 'Rotatorio',
 		'parent_slug'	=> 'theme-general-settings',
 	));
 
-=======
->>>>>>> bb1ec99976a2b6c22f68976d0b863ba1a7ed6648
 	// banners
 	acf_add_options_sub_page(array(
 		'title' 	=> 'Banners',
@@ -195,7 +192,7 @@ function bannerNoticias4() {
 }
 /* Bloque de noticias 5 */
 function bannerNoticias5() {
-	get_template_part( 'inc/banners/cover-banner-noticias4');
+	get_template_part( 'inc/banners/cover-banner-noticias5');
 }
 /* Sidebar 1 */
 function bannerSidebar1() {
@@ -413,7 +410,7 @@ if ( ! function_exists( 'shbase_continue_reading_link' ) ) :
  * Returns a "Continue Reading" link for excerpts
  */
 function shbase_continue_reading_link() {
-	return ' <a href="'. esc_url( get_permalink() ) . '">' . __( 'Continuar leyendo <span class=\"meta-nav\"></span>', 'shbase' ) . '</a>';
+	return '<br> <a class="btn CoverSlider-slideMore" href="'. esc_url( get_permalink() ) . '">' . __( 'Continuar leyendo <span class=\"meta-nav\"></span>', 'shbase' ) . '</a>';
 }
 endif; // shbase_continue_reading_link
 

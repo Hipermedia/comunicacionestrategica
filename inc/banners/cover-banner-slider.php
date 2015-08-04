@@ -4,9 +4,8 @@
 ?>
 
 
-<aside class="">
+<aside class="Banner-slider">
 	<figure>
-		<img src="" alt="">
-		banner slider
+		<img src="<?php the_field('bannerSlider','option'); ?>" alt="">
 	</figure>
 </aside>

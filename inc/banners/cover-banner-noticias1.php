@@ -3,9 +3,8 @@
 ------------------------------------------------------------------- */ 
 ?>
 
-<aside class="">
+<aside class="BannerNoticias">
 	<figure>
-		<img src="" alt="">
-		banner portada noticias 1
+		<img src="<?php the_field('bannerNoticias1','option'); ?>" alt="">
 	</figure>
 </aside>

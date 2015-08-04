@@ -2,3 +2,40 @@
 /*------------------[BLOCKS]----------------------*/
 /*------------------------------------------------*/
 
+.Banner-header {
+
+	figure {
+		width: 65%;
+		margin: 0;
+	}
+}
+
+.Banner-slider {
+	padding: 0.5rem 0;
+
+	figure {
+		margin: 0;
+	}
+}
+
+.BannerMonero {
+	float: left;
+	width: 33%;
+
+	figure {
+		margin: 0;
+	}
+}
+
+.BannerNoticias {
+	/*border-bottom: 2px #CBCBCB solid;*/
+
+	figure {
+		margin: 0;
+		padding: 1rem;
+	}
+}
+
+.BannerSidebar {
+	padding: 1rem .5rem;
+}

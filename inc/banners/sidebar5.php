@@ -3,9 +3,8 @@
 ------------------------------------------------------------------- */ 
 ?>
 
-<aside class="">
+<aside class="BannerSidebar">
 	<figure>
-		<img src="" alt="">
-		banner sidebar 5
+		<img src="<?php the_field('bannerSidebar5','option'); ?>" alt="">
 	</figure>
 </aside>
