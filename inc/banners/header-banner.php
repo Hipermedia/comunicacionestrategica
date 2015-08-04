@@ -4,8 +4,8 @@
 ?>
 
 <!-- header-banner -->
-<aside class="Banner-header">
-	<figure>
+<aside class="BannerHeader">
+	<figure class="u-BannerFigure">
 		<img src="<?php the_field('bannerHeader','option'); ?>" alt="">
 	</figure>
 </aside>
