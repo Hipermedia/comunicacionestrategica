@@ -48,5 +48,9 @@ jQuery(document).ready(function($) {
 	  	itemMargin: 5,
 	  	controlNav: false
 	});
+
+	$('#cover-slider-videos').flexslider({
+	  animation: "slide"
+	});
 });
 
