@@ -37,11 +37,14 @@
 }
 
 .BannerNoticias {
-	/*border-bottom: 2px #CBCBCB solid;*/
+	padding: 1.3rem 1rem 1.3rem 0;
 
 	figure {
 		margin: 0;
-		padding: 1rem;
+
+		img {
+			padding-top: 1rem;
+		}
 	}
 }
 

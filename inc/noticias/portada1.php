@@ -4,29 +4,37 @@
 ?>
 <!-- portada1 -->
 <section class="Noticias-bloquePortada1">
-	  	<?php 
-	  	// the query
-	  	$categoria = get_field('bloqueNoticias1','option');
-	  	// $args = 'cat='.$categoria;
-	  	$args = array(
-	  					'cat' 				=>	$categoria,
-	  					'posts_per_page'	=> 	4,
-	  				); 
-	  	$consulta = new WP_Query( $args ); ?>
-	  	<?php if ( $consulta->have_posts() ) : ?>
-	  	<h3 class="Noticias-categoria"><?php echo get_cat_name($categoria); ?></h3>
-	  		<!-- the loop -->
-	  		<?php while ( $consulta->have_posts() ) : $consulta->the_post(); ?>
-	  			<figure>
-	  				<?php the_post_thumbnail('large', array( 'class' => "Noticias-imagen")); ?>
-	  			</figure>
-				<h2 class="Noticias-titulo"><?php the_title(); ?></h2>
-				<p class="Noticias-fecha"><?php the_date(); ?></p>
-				<p class="Noticias-resumen"><?php the_excerpt(); ?></p>
-	  		<?php endwhile; ?>
-	  		<!-- end of the loop -->
-	  		<?php wp_reset_postdata(); ?>
-	  	<?php else : ?>
-	  		<p><?php _e( 'No hay resultados' ); ?></p>
-	  	<?php endif; ?>
+	<h2 class="Noticias-categoria">Estatales</h2>
+	<section class="Noticias-destacada">
+		<figure>
+			<img src="<?php echo get_plantilla_url()."/images/slider.jpg"; ?>" alt="">
+		</figure>
+		<h2 class="Noticias-titulo">Título de la noticia destacada de la sección de estatales</h2>
+		<p class="Noticias-fecha">Lunes 19 de enero de 2015</p>
+		<p class="Noticias-resumen">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus illum cupiditate quibusdam iste eaque nobis quisquam dolorem sint ut, illo exercitationem libero fugiat, hic rem delectus repellendus asperiores dignissimos laborum!</p>
+	</section>
+
+	<section class="Noticias-secundarias">
+		<div class="Noticias-noticia">
+			<figure>
+				<img src="<?php echo get_plantilla_url()."/images/slider.jpg"; ?>" alt="">
+			</figure>
+			<h2 class="Noticias-titulo">Título de la noticia destacada de la sección de estatales</h2>
+			<p class="Noticias-fecha">Lunes 19 de enero de 2015</p>
+		</div>
+		<div class="Noticias-noticia">
+			<figure>
+				<img src="<?php echo get_plantilla_url()."/images/slider.jpg"; ?>" alt="">
+			</figure>
+			<h2 class="Noticias-titulo">Título de la noticia destacada de la sección de estatales</h2>
+			<p class="Noticias-fecha">Lunes 19 de enero de 2015</p>
+		</div>
+		<div class="Noticias-noticia">
+			<figure>
+				<img src="<?php echo get_plantilla_url()."/images/slider.jpg"; ?>" alt="">
+			</figure>
+			<h2 class="Noticias-titulo">Título de la noticia destacada de la sección de estatales</h2>
+			<p class="Noticias-fecha">Lunes 19 de enero de 2015</p>
+		</div>
+	</section>
 </section>

@@ -67,19 +67,23 @@ get_header(); ?>
 			<?php bannerNoticias3(); ?>
 			<!-- bloque noticias 3-->
 			<?php bloqueNoticias3(); ?>
-			<!-- cover-banner-noticias4 -->
-			<?php bannerNoticias4(); ?>
-			<!-- bloque noticias 4-->
-			<?php bloqueNoticias4(); ?>
-			<!-- bloque noticias 5-->
-			<?php bloqueNoticias5(); ?>
-			<!-- cover-banner-noticias5 -->
-			<?php bannerNoticias5(); ?>
-			<!-- bloque noticias 6-->
-			<?php bloqueNoticias6(); ?>
-			<!-- bloque noticias 7-->
-			<?php bloqueNoticias7(); ?>
-			<!-- cover-banner-noticias6 -->
+			<div class="aux">
+				<!-- cover-banner-noticias4 -->
+				<?php bannerNoticias4(); ?>
+				<!-- bloque noticias 4-->
+				<?php bloqueNoticias4(); ?>
+				<!-- bloque noticias 5-->
+				<?php bloqueNoticias5(); ?>
+				<!-- cover-banner-noticias5 -->
+				<?php bannerNoticias5(); ?>
+			</div>
+			<div class="aux">
+				<!-- bloque noticias 6-->
+				<?php bloqueNoticias6(); ?>
+				<!-- bloque noticias 7-->
+				<?php bloqueNoticias7(); ?>
+				<!-- cover-banner-noticias6 -->
+			</div>
 			
 		</section>
 
