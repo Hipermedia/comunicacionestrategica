@@ -40,9 +40,8 @@ input#s {
 	-moz-border-radius: 2px;
 	border-radius: 2px;
 	font-size: 0.875em; /* 14px */
-	/*height: 33px;*/
+	height: 33px;
 	padding: 5px 10px 5px 28px;
-	margin-top: 0.3em;
 }
 input#searchsubmit {
 	display: none;
@@ -121,8 +120,3 @@ form.wpcf7-form input[type="submit"]:hover {
 
 /* color de las marcas de agua o input placeholders */
 @include color-placeholder( #888 );
-
-
-
-
-

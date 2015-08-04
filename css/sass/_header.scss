@@ -2,6 +2,7 @@
 /*-----------------[HEADER]-----------------------*/
 /*------------------------------------------------*/
 .Header { 
+	padding: 0 .8rem;
 	width: $desktop-width;
 	position: relative;
 	clear: both;
@@ -25,6 +26,7 @@
 		.Header-logoCE {
 			display: block;
 			float: left;
+			width: 65%;
 			max-width: 730px;
 
 			@media (max-width: $tablet-width) {
@@ -34,6 +36,7 @@
 				padding: 1rem 0;
 			}
 			img {
+				width: 100%;
 				max-width: 730px;
 				@include transicion();
 
@@ -44,7 +47,8 @@
 		}
 		/* Logo CE */
 		.Header-logoRR {
-			padding: .5rem 1rem;
+			width: 35%;
+			padding: .55rem 1rem;
 			display: block;
 			float: left;
 			max-width: 420px;
@@ -56,6 +60,7 @@
 				padding: 1rem 0;
 			}
 			img {
+				width: 100%;
 				max-width: 420px;
 				@include transicion();
 
@@ -77,8 +82,10 @@
 		}
 		/* Search Form */
 		#searchform {
+			width: 36%;
+			background: #E8E8E8;
 			float: right;
-			padding: .5rem 1em;
+			padding: .4rem 1em;
 			@include transicion();
 
 			@media (max-width: $tablet-width) {
@@ -90,13 +97,15 @@
 		}
 		
 		 #s {
+		 	border-radius: 6px;
 			float: right;
 			@include transicion();
-			width: 90px;
+			width: 100%;
+			background: #fff;
 		}
 		#s:focus {
 			background-color: #f9f9f9;
-			width: 196px;
+			width: 375px;
 		}
 		#searchsubmit {
 			display: none;
