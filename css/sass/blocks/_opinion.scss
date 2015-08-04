@@ -5,11 +5,15 @@
 .SidebarOpinion {
 	padding-left: .5rem;
 	padding-top: 2.3rem;
+	padding-right: .5rem;
 
 	.h2 {
 		background: #C2C2C2;
 		margin: 0;
 		color: #FEFEFE;
+		font-size: 1.3rem;
+		font-weight: bold;
+		padding: .4rem;
 	}
 
 	.SidebarOpinion-tabs {
@@ -27,16 +31,19 @@
 		}
 
 		li {
+			width: 33.3%;
 
 			a {
 				border: none;
 				margin: 0;
 				color: #FAFAFA;
+				font-weight: bold;
 			}
 
 			a:hover {
 				border-radius: 0;
 				border: none;
+				background: none;
 			}
 		}
 	}
@@ -65,6 +72,19 @@
 				margin: 0;
 				width: 70%;
 				float: left;
+			}
+
+			h2 {
+				color: #545454;
+				font-size: 1rem;
+				font-weight: bold;
+				padding-top: 1rem;
+			}
+
+			p {
+				color: #969696;
+				font-weight: bold;
+				font-size: .8rem;
 			}
 		}
 	}
