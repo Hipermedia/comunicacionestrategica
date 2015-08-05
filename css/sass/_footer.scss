@@ -7,9 +7,63 @@
 ----------------------------------------------- */
 
 .Footer {
-	padding-top: 2rem;	
-	background: $footer-bg;
+	background: #EFEFEF;
+
+	.Footer-contenedor { background: $footer-bg; padding: 0 2em; }
 	
+	.Footer-bloque {
+		vertical-align: top;
+		width: 33%;
+		display: inline-block;
+		text-align: center;
+		color: #A0A0A0;
+		padding: 1rem .5rem 0 .5rem;
+
+		.Footer-logo {
+			width: 100%;
+
+			img {
+				width: 100%;
+				padding: .5rem 0;
+			}
+		}
+
+		.condiciones { color: white; }
+
+		.Footer-textito {
+			padding: .8rem;
+			text-align: left;
+			font-size: 1rem;
+			font-weight: bold;
+		}
+
+		i {
+			color: white;
+			width: 10%;
+			display: inline-block;
+			font-size: 2rem;
+		}
+
+		h3 {
+			text-align: left;
+			width: 90%;
+			display: inline-block;
+			margin: 0;
+			font-size: 1.3rem;
+			margin: .3rem 0;
+		}
+
+		.Newsletter {
+			margin: 0;
+			width: 100%;
+			background: #4A4A4A;
+		}
+
+		.anuncio {
+			font-size: 1rem;
+			padding-top: 1rem;
+		}
+	}
 
 	.Footer-creditos {
 		width: 100%; 
