@@ -24,10 +24,11 @@
 
 		/* Logo CE */
 		.Header-logoCE {
+			padding-right: $padding-bloques*2;
 			display: block;
 			float: left;
 			width: 65%;
-			max-width: 730px;
+			/*max-width: 730px;*/
 
 			@media (max-width: $tablet-width) {
 				max-width: 100%;
@@ -37,7 +38,7 @@
 			}
 			img {
 				width: 100%;
-				max-width: 730px;
+				/*max-width: 730px;*/
 				@include transicion();
 
 				@media (max-width: $tablet-width) {
@@ -48,10 +49,9 @@
 		/* Logo CE */
 		.Header-logoRR {
 			width: 35%;
-			padding: .55rem 1rem;
 			display: block;
 			float: left;
-			max-width: 420px;
+			padding-bottom: 1rem;
 
 			@media (max-width: $tablet-width) {
 				max-width: 100%;
@@ -71,7 +71,7 @@
 		}
 		/* Botones Sociales */
 		.social {
-			float: left;;
+			float: left;
 			padding: .55rem 1em;	
 
 			@media (max-width: $tablet-width) {
@@ -82,10 +82,10 @@
 		}
 		/* Search Form */
 		#searchform {
-			width: 36%;
+			width: 35%;
 			background: #E8E8E8;
-			float: right;
-			padding: .4rem 1em;
+			float: left;
+			padding: .5rem 1rem;
 			@include transicion();
 
 			@media (max-width: $tablet-width) {
@@ -147,19 +147,33 @@
 				float: left;
 				font-weight: normal;
 				padding-bottom: .8rem;
+				@media (max-width: $tablet-width) {
+					width: 100%;
+					text-align: center;
+				}
 
 				.p {
 					padding: .1rem 0 0 .3rem; 
 					color: #707070;
 					margin: 0; 
 					width: auto;
-					font-weight: bold; 
+					font-weight: bold;
+					@media (max-width: $tablet-width) {
+					 	padding: 0;
+					 	width: 100%;
+					 	text-align: center;
+					 	padding: .3rem 0;
+					 } 
 				}
 
 				.fa-cloud {
 					padding-left: .3rem;
 					float: left;
 					color: #9E9E9E;
+					@media (max-width: $tablet-width) {
+					 	padding: 0;
+					 	float: none;
+					 }
 				}
 
 				.clima {

@@ -78,7 +78,7 @@
             <!-- Bloque utilitario -->
             <div class="Header-bloqueUtilitario">
                 <p class="p">Lunes 19 de enero de 2015</p>
-                <i class="fa fa-cloud"></i><p class="p clima">Cielos Nubosos 13° en Xalapa, Ver.</p>
+                <p class="p clima"><i class="fa fa-cloud"></i>Cielos Nubosos 13° en Xalapa, Ver.</p>
                 <!-- Redes sociales -->
                 <?php primalSocialShare(); ?>
             </div>
