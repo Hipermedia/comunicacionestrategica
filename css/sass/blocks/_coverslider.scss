@@ -5,6 +5,9 @@
 .CoverSlider {
 	position: relative;
 	overflow: visible;
+	@media (max-width: $smaller-width) {
+		display: none;
+	}
 	
 	.flex-viewport { background: #4A4A4A; }
 	.flexslider { margin: 0; }
@@ -16,7 +19,11 @@
 			width: 70%;
 			float: left;
 			display: block;
+			@media (max-width: $tablet-width) {
+				width: 100%;
+			}
 		}
+
 		.CoverSlider-slideCaption {
 			color: #F2F2F2;
 			padding: 1.2rem 1rem;
@@ -26,10 +33,9 @@
 			background: #4A4A4A;
 			float: left;
 			display: block;
-
-			.CoverSlider-slideDescription {
-				font-size: 1.3rem;
-				margin-bottom: 3rem;
+			@media (max-width: $tablet-width) {
+				width: 100%;
+				margin-top: -5rem;
 			}
 
 			.btn {
