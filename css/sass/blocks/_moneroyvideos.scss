@@ -5,6 +5,9 @@
 .RotatorioVideos {
 	float: left;
 	width: 33%;
+	@media (max-width: $tablet-width) {
+		width: 50%;
+	}
 
 	#cover-slider-videos { margin: 0; border-top: none; padding-right: .4rem}
 
@@ -29,7 +32,10 @@
 	padding: 0 .6rem 0 .5rem;
 	float: left;
 	width: 33%;
-	/*background: #C2C2C2;*/
+	@media (max-width: $tablet-width) {
+		width: 50%;
+		padding-right: 0.4rem;
+	}
 
 	.Monero-figure {
 		margin: 0;
@@ -38,7 +44,7 @@
 		.Monero-caption {
 			background: #C2C2C2;
 			padding: .5rem 0;
-			margin-top: -2.4rem;
+			margin-top: -2.55rem;
 			position: relative;
 			z-index: 1;
 

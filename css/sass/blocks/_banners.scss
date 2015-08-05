@@ -24,6 +24,9 @@
 
 .Banner-slider {
 	padding: 0.8rem 0.3rem;
+	@media (max-width: $tablet-width) {
+		/*padding: 0;*/
+	}
 
 	figure {
 		margin: 0;
@@ -35,6 +38,12 @@
 	float: left;
 	width: 33.5%;
 	margin-top: .5rem;
+	@media (max-width: $tablet-width) {
+		width: 38%;
+	}
+	@media (max-width: $smaller-width) {
+		width: 100%;
+	}
 
 	figure {
 		margin: 0;
