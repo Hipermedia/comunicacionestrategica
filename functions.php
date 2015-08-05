@@ -282,6 +282,12 @@ function analisis() {
 	get_template_part( 'inc/sidebar-analisis');
 }
 
+/* Más leído
+ * ------------------------------------------------------------- */
+function masLeido() {
+	get_template_part( 'inc/sidebar-mas-leido');
+}
+
 /* Redes sociales
  * ------------------------------------------------------------- */
 /* PRIMAL; social link buttons */

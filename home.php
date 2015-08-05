@@ -103,6 +103,8 @@ get_header(); ?>
 			<?php bannerSidebar3(); ?>
 			<!-- banner sidebar 4 -->
 			<?php bannerSidebar4(); ?>
+			<!-- Más leído -->
+			<?php masLeido(); ?>
 			<!-- banner sidebar 5 -->
 			<?php bannerSidebar5(); ?>
 		</section>
