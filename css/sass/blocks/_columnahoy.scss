@@ -4,30 +4,56 @@
 
 .SidebarColumnaHoy {
 	background: #EBEBEB;
+	margin: 0 0.5rem;
+	padding-bottom: 1rem;
 
-	p {
-		font-size: 2rem;
-		margin: 0;
-		padding: 1rem .5rem;
+	.h2 {
 		background: #C2C2C2;
+		margin: 0;
+		color: #FEFEFE;
+		font-size: 1.3rem;
+		font-weight: bold;
+		padding: .4rem;
 	}
 
 	figure {
+		border-radius: 5px;
+		text-align: center;
+		background: #CFCFCF;
+		margin: 1rem;
 		float: left;
 		width: 25%;
 		padding: .5rem;
 
-		img {
-			border-radius: 5px;
+		i {
+			color: #999999;
+			font-size: 5rem;
 		}
 	}
 
-	h2,h3 { margin: 0; padding: .6rem 0; }
+	.SidebarColumnaHoy-titulo,.SidebarColumnaHoy-columnista {
+		margin: 0;
+		float: left;
+		width: 65%
+	}
 
-	.SidebarColumnaHoy-contenido {
-		width: 100%;
-		background: #DBDBDB;
-		overflow: auto;
-		height: 250px;
+	.SidebarColumnaHoy-titulo {
+		color: #5B5B5B;
+		font-size: 1.3rem;
+		font-weight: bold;
+		padding-top: 1rem;
+	}
+
+	.SidebarColumnaHoy-columnista {
+		font-size: 0.8rem;
+		font-weight: bold;
+		color: #A0A0A0;
+		padding-top: .5rem;
+	}
+
+	.btn {
+		width: 80%;
+		margin: 0 auto;
+		display: block;
 	}
 }
