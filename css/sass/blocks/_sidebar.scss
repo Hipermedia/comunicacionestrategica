@@ -7,9 +7,7 @@
 	width: 30%;
 	float: left;
 	display: block;
-
-	.BannerSidebar {
-		
+	@media (max-width: $tablet-width) {
+		width: 100%;
 	}
-
 }

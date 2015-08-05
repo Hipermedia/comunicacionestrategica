@@ -4,6 +4,9 @@
 
 .ColumnistasDestacados {
 	background: #9C9C9C;
+	@media (max-width: $smaller-width) {
+		display: none;
+	}
 	
 	h4 {
 		background: #4A4A4A;
@@ -17,11 +20,17 @@
 		display: block;
 		margin: 0 auto;
 		width: 1200px;
-		padding: 0 .8rem;
+		@media (max-width: $tablet-width) {
+			width: 100%;
+		}
+		/*padding: 0 .8rem;*/
 
-		#cover-slider-columnistas { background: #9C9C9C; border: none; margin: 0; padding: 1rem 3rem;}
+		#cover-slider-columnistas { background: #9C9C9C; border: none; margin: 0; }
 
 		li {
+			text-align: center;
+			@media (max-width: $tablet-width) {
+			}
 
 			figure {
 				background: #EBEBEB;
@@ -39,12 +48,14 @@
 
 			.ColumnistasDestacados-nota {
 				color: #FEFEFE;
-				
+				font-size: 1.5rem;
+				font-weight: bold;
 			}
 
 			.ColumnistasDestacados-nombre {
 				color: #C5C5C5;
-
+				font-size: 1rem;
+				font-weight: bold;
 			}
 		}
 	}

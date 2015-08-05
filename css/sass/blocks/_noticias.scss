@@ -8,6 +8,9 @@
 	width: 70%;
 	float: left;
 	display: block;
+	@media (max-width: $tablet-width) {
+		width: 100%;
+	}
 
 	.aux { width: 100%; display: inline-block; }
 
@@ -161,6 +164,9 @@
 		float: left;
 		width: 49%;
 		padding: 0 .3rem;
+		@media (max-width: $tablet-width) {
+			margin: 0;
+		}
 
 		.Noticias-categoria {
 			margin: 0;
