@@ -52,5 +52,9 @@ jQuery(document).ready(function($) {
 	$('#cover-slider-videos').flexslider({
 	  animation: "slide"
 	});
+
+	$('#cover-slider-analisis').flexslider({
+	  animation: "slide"
+	});
 });
 
