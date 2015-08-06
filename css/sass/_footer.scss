@@ -18,6 +18,9 @@
 		text-align: center;
 		color: #A0A0A0;
 		padding: 1rem .5rem 0 .5rem;
+		@media (max-width: $tablet-width) {
+			width: 100%;
+		}
 
 		.Footer-logo {
 			width: 100%;
@@ -35,6 +38,9 @@
 			text-align: left;
 			font-size: 1rem;
 			font-weight: bold;
+			@media (max-width: $tablet-width) {
+				text-align: center;
+			}
 		}
 
 		i {

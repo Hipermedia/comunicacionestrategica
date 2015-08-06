@@ -18,35 +18,35 @@
 	  <div id="leido1" class="tab-pane fade in active">
 		<div class="SidebarMasLeido-ficha">
 			<figure>
-				<i class="fa fa-user"></i>
+				<i class="fa fa-picture-o"></i>
 			</figure>
 			<h2>Nombre del artículo de la columna</h2>
 			<p>Nombre del columnista</p>
 		</div>
 		<div class="SidebarMasLeido-ficha">
 			<figure>
-				<i class="fa fa-user"></i>
+				<i class="fa fa-picture-o"></i>
 			</figure>
 			<h2>Nombre del artículo de la columna</h2>
 			<p>Nombre del columnista</p>
 		</div>
 		<div class="SidebarMasLeido-ficha">
 			<figure>
-				<i class="fa fa-user"></i>
+				<i class="fa fa-picture-o"></i>
 			</figure>
 			<h2>Nombre del artículo de la columna</h2>
 			<p>Nombre del columnista</p>
 		</div>
 		<div class="SidebarMasLeido-ficha">
 			<figure>
-				<i class="fa fa-user"></i>
+				<i class="fa fa-picture-o"></i>
 			</figure>
 			<h2>Nombre del artículo de la columna</h2>
 			<p>Nombre del columnista</p>
 		</div>
 		<div class="SidebarMasLeido-ficha">
 			<figure>
-				<i class="fa fa-user"></i>
+				<i class="fa fa-picture-o"></i>
 			</figure>
 			<h2>Nombre del artículo de la columna</h2>
 			<p>Nombre del columnista</p>
@@ -56,35 +56,35 @@
 	  <div id="leido2" class="tab-pane fade">
 		<div class="SidebarMasLeido-ficha">
 			<figure>
-				<i class="fa fa-user"></i>
+				<i class="fa fa-picture-o"></i>
 			</figure>
 			<h2>Nombre del artículo de la columna</h2>
 			<p>Nombre del columnista</p>
 		</div>
 		<div class="SidebarMasLeido-ficha">
 			<figure>
-				<i class="fa fa-user"></i>
+				<i class="fa fa-picture-o"></i>
 			</figure>
 			<h2>Nombre del artículo de la columna</h2>
 			<p>Nombre del columnista</p>
 		</div>
 		<div class="SidebarMasLeido-ficha">
 			<figure>
-				<i class="fa fa-user"></i>
+				<i class="fa fa-picture-o"></i>
 			</figure>
 			<h2>Nombre del artículo de la columna</h2>
 			<p>Nombre del columnista</p>
 		</div>
 		<div class="SidebarMasLeido-ficha">
 			<figure>
-				<i class="fa fa-user"></i>
+				<i class="fa fa-picture-o"></i>
 			</figure>
 			<h2>Nombre del artículo de la columna</h2>
 			<p>Nombre del columnista</p>
 		</div>
 		<div class="SidebarMasLeido-ficha">
 			<figure>
-				<i class="fa fa-user"></i>
+				<i class="fa fa-picture-o"></i>
 			</figure>
 			<h2>Nombre del artículo de la columna</h2>
 			<p>Nombre del columnista</p>

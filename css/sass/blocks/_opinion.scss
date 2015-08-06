@@ -6,6 +6,10 @@
 	padding-left: .5rem;
 	padding-top: 2.3rem;
 	padding-right: .5rem;
+	@media (max-width: $tablet-width) {
+		float: left;
+		width: 49%;
+	}
 
 	.h2 {
 		background: #C2C2C2;

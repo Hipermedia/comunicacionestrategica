@@ -40,6 +40,7 @@
 	margin-top: .5rem;
 	@media (max-width: $tablet-width) {
 		width: 38%;
+		min-height: 165px;
 	}
 	@media (max-width: $smaller-width) {
 		width: 100%;
@@ -47,6 +48,12 @@
 
 	figure {
 		margin: 0;
+
+		img {
+			@media (max-width: $tablet-width) {
+				height: 165px;
+			}
+		}
 	}
 }
 

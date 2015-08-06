@@ -10,6 +10,13 @@
 	}
 	
 	.flex-viewport { background: #4A4A4A; }
+
+	.flex-direction-nav {
+		opacity: 0;
+		@media (max-width: $tablet-width) {
+			opacity: 1;
+		}
+	}
 	.flexslider { margin: 0; }
 
 	.CoverSlider-slide {
@@ -67,6 +74,12 @@
 			padding-top: .5rem;
 			margin: 0 .3%;
 			width: 24.2%;
+		}
+	}
+
+	#cover-slider-thumb-nav {
+		@media (max-width: $tablet-width) {
+			display: none;
 		}
 	}
 }
