@@ -10,6 +10,7 @@
 	display: block;
 	@media (max-width: $tablet-width) {
 		width: 100%;
+		float: none;
 	}
 
 	.aux { width: 100%; display: inline-block; }
@@ -54,6 +55,9 @@
 
 		.Noticias-secundarias {
 			padding-top: 1.3rem;
+			@media (max-width: $smaller-width) {
+				display: none;
+			}
 
 			.Noticias-noticia {
 				float: left;
@@ -94,6 +98,10 @@
 		.Noticias-destacada {
 			float: left;
 			width: 50%;
+			@media (max-width: $smaller-width) {
+				width: 100%;
+				float: none;
+			}
 
 			h2,p { margin: 0; }
 
@@ -124,6 +132,9 @@
 		.Noticias-secundarias {
 			float: left;
 			width: 50%;
+			@media (max-width: $smaller-width) {
+				display: none;
+			}
 
 			.Noticias-noticia {
 				width: 100%;
@@ -167,6 +178,11 @@
 		@media (max-width: $tablet-width) {
 			margin: 0;
 		}
+		@media (max-width: $smaller-width) {
+			float: none;
+			width: 100%;
+			margin-bottom: 2rem;
+		}
 
 		.Noticias-categoria {
 			margin: 0;
@@ -197,6 +213,9 @@
 		}
 
 		.Noticias-secundarias {
+			@media (max-width: $smaller-width) {
+				display: none;
+			}
 
 			.Noticias-noticia {
 				width: 100%;

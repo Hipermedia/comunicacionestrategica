@@ -43,7 +43,7 @@
 		min-height: 165px;
 	}
 	@media (max-width: $smaller-width) {
-		width: 100%;
+		display: none;
 	}
 
 	figure {
@@ -71,4 +71,13 @@
 
 .BannerSidebar {
 	padding: 1rem .5rem;
+	@media (max-width: $tablet-width) {
+		margin-bottom: 1.5rem;
+	}
+}
+
+.u-hidden {
+	@media (max-width: $tablet-width) {
+		display: none;
+	}
 }

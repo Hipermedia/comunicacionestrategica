@@ -17,9 +17,11 @@
 				<?php if ( $consulta->have_posts() ) : ?>
 					<!-- the loop -->
 					<?php while ( $consulta->have_posts() ) : $consulta->the_post(); ?>
-						<figure>
-							<?php the_post_thumbnail('large'); ?>
-						</figure>
+						<a href="<?php the_permalink(); ?>">
+							<figure>
+								<?php the_post_thumbnail('large'); ?>
+							</figure>
+						</a>
 						<h2 class="Noticias-titulo"><?php the_title(); ?></h2>
 						<p class="Noticias-fecha">Lunes 19 de enero de 2015</p>
 						<p class="Noticias-resumen"><?php the_excerpt(); ?></p>
@@ -44,9 +46,11 @@
 					<!-- the loop -->
 					<?php while ( $consulta->have_posts() ) : $consulta->the_post(); ?>
 						<div class="Noticias-noticia">
-							<figure>
-								<?php the_post_thumbnail(); ?>
-							</figure>
+							<a href="<?php the_permalink(); ?>">
+								<figure>
+									<?php the_post_thumbnail(); ?>
+								</figure>
+							</a>
 							<div class="texto">
 								<h2 class="Noticias-titulo"><?php the_title(); ?></h2>
 								<p class="Noticias-fecha">Lunes 19 de enero de 2015</p>

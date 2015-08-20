@@ -5,6 +5,9 @@
 .SidebarMasLeido {
 	padding-left: .5rem;
 	padding-right: .5rem;
+	@media (max-width: $tablet-width) {
+		display: none;
+	}
 
 	.h2 {
 		background: #C2C2C2;

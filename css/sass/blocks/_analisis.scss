@@ -6,6 +6,9 @@
 	background: #EBEBEB;
 	margin: 0 .5rem;
 	padding-bottom: 1rem;
+	@media (max-width: $tablet-width) {
+		display: none;
+	}
 
 	.h2 {
 		background: #C2C2C2;
@@ -17,13 +20,35 @@
 	}
 
 	#cover-slider-analisis { background: #EBEBEB; margin: 0; border: none; padding: 1rem; }
+	
+	.flex-direction-nav a { overflow: visible; }
+
+	.flex-direction-nav {
+		
+		.flex-nav-prev {
+
+			.flex-prev {
+
+			}
+
+		}
+
+		.flex-nav-next {
+
+			.flex-next {
+
+			}
+
+		}
+
+	}
 
 	.SidebarAnalisis-caption {
 		padding: .3rem 0;
 		position: relative;
 		text-align: center;
 		background: #C3C3C3;
-		margin: -5rem 0 0 0;
+		margin: 0;
 	}
 
 	.flex-control-nav {

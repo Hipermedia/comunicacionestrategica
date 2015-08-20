@@ -36,8 +36,11 @@ jQuery(document).ready(function($) {
 	$('#cover-slider').flexslider({
 		animation: "slide",
 		controlNav: false,
-		animationLoop: false,
-		slideshow: false,
+		animationLoop: true,
+		directionNav: true,
+		slideshow: true,
+		prevText: "",
+		nextText: "",
 		sync: "#cover-slider-thumb-nav"
 	});
 
@@ -46,15 +49,21 @@ jQuery(document).ready(function($) {
 	  	animationLoop: false,
 	  	itemWidth: 300,
 	  	itemMargin: 0,
-	  	controlNav: false
+	  	controlNav: false,
+	  	prevText: "",
+	  	nextText: ""
 	});
 
 	$('#cover-slider-videos').flexslider({
-	  animation: "slide"
+	  animation: "slide",
+	  prevText: "",
+	  nextText: ""
 	});
 
 	$('#cover-slider-analisis').flexslider({
-	  animation: "slide"
+	  animation: "slide",
+	  prevText: "",
+	  nextText: ""
 	});
 });
 

@@ -32,6 +32,12 @@
 	  		
 	  	</ul>
 	</div>
+<!-- 	<div class="custom-navigation">
+	  <div class="custom-controls-container">
+	  	<a href="#" class="flex-prev">Prev</a>
+	  	<a href="#" class="flex-next">Next</a>
+	  </div>
+	</div> -->
 
 	<div id="cover-slider-thumb-nav" class="flexslider">
 	  	<ul class="slides">

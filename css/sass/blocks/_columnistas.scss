@@ -27,6 +27,28 @@
 
 		#cover-slider-columnistas { background: #9C9C9C; border: none; margin: 0; }
 
+		.flex-direction-nav a { overflow: visible; }
+
+		.flex-direction-nav {
+			
+			.flex-nav-prev {
+
+				.flex-prev {
+
+				}
+
+			}
+
+			.flex-nav-next {
+
+				.flex-next {
+
+				}
+
+			}
+
+		}
+
 		li {
 			text-align: center;
 			@media (max-width: $tablet-width) {

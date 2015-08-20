@@ -8,9 +8,35 @@
 	@media (max-width: $tablet-width) {
 		width: 50%;
 	}
+	@media (max-width: $smaller-width) {
+		width: 100%;
+		float: none;
+	}
 
 	#cover-slider-videos { margin: 0; border-top: none; padding-right: .4rem}
+	
+	.flex-direction-nav a { overflow: visible; }
 
+	.flex-direction-nav {
+		
+		.flex-nav-prev {
+
+			.flex-prev {
+
+			}
+
+		}
+
+		.flex-nav-next {
+
+			.flex-next {
+
+			}
+
+		}
+
+	}
+	
 	.RotatorioVideos-caption {
 		padding: .3rem 0;
 		position: relative;
@@ -35,6 +61,10 @@
 	@media (max-width: $tablet-width) {
 		width: 50%;
 		padding-right: 0.4rem;
+	}
+	@media (max-width: $smaller-width) {
+		float: none;
+		width: 100%;
 	}
 
 	.Monero-figure {

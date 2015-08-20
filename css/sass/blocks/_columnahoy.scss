@@ -6,6 +6,9 @@
 	background: #EBEBEB;
 	margin: 0 0.5rem;
 	padding-bottom: 1rem;
+	@media (max-width: $tablet-width) {
+		margin-bottom: 1.5rem;
+	}
 
 	.h2 {
 		background: #C2C2C2;
