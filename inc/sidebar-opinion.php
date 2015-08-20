@@ -7,13 +7,13 @@
 	<h2 class="h2">Columnas de opinión</h2>
 	<ul class="nav nav-tabs SidebarOpinion-tabs">
 	  <li class="active">
-	  	<a data-toggle="tab" href="#home">Columna 1</a>
+	  	<a data-toggle="tab" href="#home"><?php the_field('colOpinionTab1Nombre', 'option'); ?></a>
 	  </li>
 	  <li>
-	  	<a data-toggle="tab" href="#menu1">Columna 2</a>
+	  	<a data-toggle="tab" href="#menu1"><?php the_field('colOpinionTab2Nombre', 'option'); ?></a>
 	  </li>
 	  <li>
-	  	<a data-toggle="tab" href="#menu2">Columna 3</a>
+	  	<a data-toggle="tab" href="#menu2"><?php the_field('colOpinionTab3Nombre', 'option'); ?></a>
 	  </li>
 	</ul>
 

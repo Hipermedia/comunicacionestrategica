@@ -9,8 +9,8 @@
 	  		<?php 
 	  		// the query
 	  		$args = array(
-							'posts_per_page'      => 8,
-							'cat' => 9, 
+							'posts_per_page'	=> 8,
+							'cat'				=> 9, 
 						);
 	  		$consulta = new WP_Query( $args ); ?>
 	  		<?php if ( $consulta->have_posts() ) : ?>
