@@ -58,12 +58,6 @@ if( function_exists('acf_add_options_page') ) {
 		'parent_slug'	=> 'theme-general-settings',
 	));
 
-	// slider
-	acf_add_options_sub_page(array(
-		'title' 	=> 'Rotatorio',
-		'parent_slug'	=> 'theme-general-settings',
-	));
-
 	// banners
 	acf_add_options_sub_page(array(
 		'title' 	=> 'Banners',
@@ -72,7 +66,7 @@ if( function_exists('acf_add_options_page') ) {
 
 	// videos y moneros
 	acf_add_options_sub_page(array(
-		'title' 	=> 'Videos y monero',
+		'title' 	=> 'Videos',
 		'parent_slug'	=> 'theme-general-settings',
 	));
 

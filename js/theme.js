@@ -46,9 +46,8 @@ jQuery(document).ready(function($) {
 
 	$('#cover-slider-columnistas').flexslider({
 	  	animation: "slide",
-	  	animationLoop: false,
+	  	animationLoop: true,
 	  	itemWidth: 300,
-	  	itemMargin: 0,
 	  	controlNav: false,
 	  	prevText: "",
 	  	nextText: ""

@@ -5,7 +5,26 @@
 <!-- monero -->
 <section class="Monero">
 	<figure class="Monero-figure">
-		<img src="<?php the_field('caricatura','option'); ?>" alt="" class="Monero-imagen">
+
+		<?php 
+		// the query
+		$args = array(
+				'posts_per_page'	=> 1,
+				'cat'				=> 30, 
+			);
+		$consulta = new WP_Query( $args ); ?>
+		<?php if ( $consulta->have_posts() ) : ?>
+			<!-- the loop -->
+			<?php while ( $consulta->have_posts() ) : $consulta->the_post(); ?>
+			<?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID)); ?>
+				<img src="<?php echo $url; ?>" alt="">
+			<?php endwhile; ?>
+			<!-- end of the loop -->
+			<?php wp_reset_postdata(); ?>
+		<?php else : ?>
+			<p><?php _e( 'No hay resultados' ); ?></p>
+		<?php endif; ?>
+
 		<figcaption class="Monero-caption">
 			<a href="" class="Monero-botonMas btn">Ver anteriores</a>
 		</figcaption>

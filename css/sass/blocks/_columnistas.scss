@@ -25,7 +25,23 @@
 		}
 		/*padding: 0 .8rem;*/
 
-		#cover-slider-columnistas { background: #9C9C9C; border: none; margin: 0; }
+		#cover-slider-columnistas { 
+			background: #9C9C9C; 
+			border: none; 
+			margin: 0;
+
+			ul {
+
+				li {
+					/*margin: 0 10px;*/
+
+					figure {
+						padding: 1rem;
+						background: none;
+					}
+				}
+			} 
+		}
 
 		.flex-direction-nav a { overflow: visible; }
 
