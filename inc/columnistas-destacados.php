@@ -9,10 +9,10 @@
 		<div id="cover-slider-columnistas" class="flexslider">
 		  	<ul class="slides">
 		  		<?php 
-		  			$col_destacados = get_field('columnistasDestacados');
+		  			$col_destacados = get_field('columnistasDestacados', 'option');
 		  			$args = array(
 		  						'posts_per_page'	=> 8,
-		  						'cat'	=> 24
+		  						'cat'	=> $col_destacados,
 		  					);
 		  			$consulta = new WP_Query( $args ); 
 		  		?>

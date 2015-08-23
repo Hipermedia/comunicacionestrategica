@@ -22,7 +22,9 @@
 						<?php the_post_thumbnail('large'); ?>
 					</figure>
 				</a>
-				<h2 class="Noticias-titulo"><?php the_title(); ?></h2>
+				<a href="<?php the_permalink(); ?>">
+					<h2 class="Noticias-titulo"><?php the_title(); ?></h2>
+				</a>
 				<p class="Noticias-fecha">Lunes 19 de enero de 2015</p>
 				<p class="Noticias-resumen"><?php the_excerpt(); ?></p>
 			<?php endwhile; ?>
@@ -38,7 +40,7 @@
 		$id2 = get_field('bloqueNoticias1', 'option');
 		// the query
 		$args = array(
-				'posts_per_page'	=> 3,
+				'posts_per_page'	=> 4,
 				'cat'				=> $id2, 
 			);
 		$consulta = new WP_Query( $args ); ?>
@@ -51,7 +53,9 @@
 							<?php the_post_thumbnail('large'); ?>
 						</figure>
 					</a>
-					<h2 class="Noticias-titulo"><?php the_title(); ?></h2>
+					<a href="<?php the_permalink(); ?>">
+						<h2 class="Noticias-titulo"><?php the_title(); ?></h2>
+					</a>
 					<p class="Noticias-fecha">Lunes 19 de enero de 2015</p>
 				</div>
 			<?php endwhile; ?>

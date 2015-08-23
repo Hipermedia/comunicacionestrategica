@@ -1,6 +1,7 @@
 <?php
 /**
- * The Template for displaying all single posts.
+ * The template for displaying all pages.
+ * This is the template that displays all pages by default.
  */
 
 get_header(); ?>
@@ -8,25 +9,24 @@ get_header(); ?>
 <section class="u-contenedor">
 
 	<?php while ( have_posts() ) : the_post(); ?>
-	    <article class="Post u-contenido">	
+	   
+	    <article class="Page u-contenido">	
 			
 			<!-- Imágen destacada -->
 			<?php if ( has_post_thumbnail() ) : ?>
-				<figure class="Post-featuredImage">
+				<figure class="Page-featuredImage">
 					<?php the_post_thumbnail( 'large' ); ?>
 				</figure>
 			<?php endif; ?>
 			<!-- Título del artículo -->
-			<h1 class="Post-title"><?php the_title(); ?></h1>
+			<h1 class="Page-title"><?php the_title(); ?></h1>
 			<!-- Contenido -->
 			<?php the_content(); ?>	
 			<!-- Compartir en redes sociales -->
 			<?php anliSocialShare(); ?>
-	   		<?php subh_set_post_view( get_the_ID() ); ?>
+	   
 		</article>
 	<?php endwhile; // end of the loop. ?>
-	
-	<?php get_sidebar(); ?>
 
 </section>
 

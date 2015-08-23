@@ -65,6 +65,12 @@
 				
 				figure {
 					padding: 0 .5rem;
+					overflow: hidden;
+					height: 130px;
+
+					img {
+						min-height: 100%;
+					}
 				}
 				
 				.Noticias-titulo {
@@ -82,6 +88,8 @@
 					color: #B7B7B7;
 				}
 			}
+
+			.Noticias-noticia:first-child { display: none; }
 		}
 	}
 
@@ -107,6 +115,12 @@
 
 			figure {
 				padding-right: .5rem;
+				height: 230px;
+				overflow: hidden;
+
+				img {
+					min-height: 100%;
+				}
 			}
 
 			.Noticias-titulo {
@@ -144,6 +158,12 @@
 					padding: 0 .5rem;
 					width: 50%;
 					float: left;
+					overflow: hidden;
+					height: 110px;
+
+					img {
+						min-height: 100%;
+					}
 				}
 				
 				.texto {
@@ -166,6 +186,9 @@
 					}
 				}
 			}
+
+			.Noticias-noticia:first-child { display: none; }
+
 		}
 	}
 
@@ -196,6 +219,12 @@
 
 			figure {
 				padding-right: .5rem;
+				overflow: hidden;
+				height: 200px;
+
+				img {
+					min-height: 100%;
+				}
 			}
 
 			.Noticias-titulo {
@@ -225,6 +254,12 @@
 					padding: 0 .5rem;
 					width: 50%;
 					float: left;
+					overflow: hidden;
+					height: 95px;
+
+					img {
+						min-height: 100%;
+					}
 				}
 				
 				.texto {
@@ -247,6 +282,9 @@
 					}
 				}
 			}
+
+			.Noticias-noticia:first-child { display: none; }
+			
 		}
 	}
 }

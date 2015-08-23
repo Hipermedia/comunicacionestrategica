@@ -4,6 +4,7 @@
 ?>
 <!-- sidebar-opinion -->
 <section class="SidebarMasLeido">
+
 	<h2 class="h2">Lo más leído</h2>
 	<ul class="nav nav-tabs SidebarMasLeido-tabs">
 	  <li class="active">

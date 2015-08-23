@@ -27,8 +27,9 @@ jQuery(document).ready(function($) {
 	$('#cover-slider-thumb-nav').flexslider({
 	 	animation: "slide",
 	 	controlNav: false,
-	 	animationLoop: false,
-	 	slideshow: false,
+		directionNav: false,
+	 	animationLoop: true,
+	 	slideshow: true,
 	 	itemWidth: 147,
 	 	asNavFor: '#cover-slider'
 	});
@@ -37,7 +38,7 @@ jQuery(document).ready(function($) {
 		animation: "slide",
 		controlNav: false,
 		animationLoop: true,
-		directionNav: true,
+		directionNav: false,
 		slideshow: true,
 		prevText: "",
 		nextText: "",
@@ -47,6 +48,7 @@ jQuery(document).ready(function($) {
 	$('#cover-slider-columnistas').flexslider({
 	  	animation: "slide",
 	  	animationLoop: true,
+	  	slideshow: true,
 	  	itemWidth: 300,
 	  	controlNav: false,
 	  	prevText: "",

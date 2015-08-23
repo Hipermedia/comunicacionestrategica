@@ -6,21 +6,25 @@
  * @subpackage SH_Base
  * @since SH Base 1.0
  */
-
-$current_layout = $options['theme_layout'];
-
-if ( 'content' != $current_layout ) :
 ?>
-		<aside class="sidebar" class="widget-area" role="complementary">
-			<?php if ( ! dynamic_sidebar( 'sidebar-1' ) ) : ?>
 
-				<div id="archives" class="widget">
-					<h3 class="widget-title"><?php _e( 'Archives', 'shbase' ); ?></h3>
-					<ul>
-						<?php wp_get_archives( array( 'type' => 'monthly' ) ); ?>
-					</ul>
-				</div>
-				
-			<?php endif; // end sidebar widget area ?>
-		</aside><!-- #sidebar .widget-area -->
-<?php endif; ?>
+<section class="Sidebar-portada">
+	<!-- Columnas de opinion -->
+	<?php columnasOpinion(); ?>			
+	<!-- banner sidebar1  -->
+	<?php bannerSidebar1(); ?>
+	<!-- Columna Hoy -->
+	<?php columnaHoy(); ?>
+	<!-- banner sidebar 2 -->
+	<?php bannerSidebar2(); ?>
+	<!-- Análisis -->
+	<?php analisis(); ?>
+	<!-- banner sidebar 3 -->
+	<?php bannerSidebar3(); ?>
+	<!-- banner sidebar 4 -->
+	<?php bannerSidebar4(); ?>
+	<!-- Más leído -->
+	<?php masLeido(); ?>
+	<!-- banner sidebar 5 -->
+	<?php bannerSidebar5(); ?>
+</section>

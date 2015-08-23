@@ -17,10 +17,14 @@
 				<?php if ( $consulta->have_posts() ) : ?>
 					<!-- the loop -->
 					<?php while ( $consulta->have_posts() ) : $consulta->the_post(); ?>
-						<figure>
-							<?php the_post_thumbnail('large'); ?>
-						</figure>
-						<h2 class="Noticias-titulo"><?php the_title(); ?></h2>
+						<a href="<?php the_permalink(); ?>">
+							<figure>
+								<?php the_post_thumbnail('large'); ?>
+							</figure>
+						</a>
+						<a href="<?php the_permalink(); ?>">
+							<h2 class="Noticias-titulo"><?php the_title(); ?></h2>
+						</a>
 						<p class="Noticias-fecha">Lunes 19 de enero de 2015</p>
 						<p class="Noticias-resumen"><?php the_excerpt(); ?></p>
 					<?php endwhile; ?>
@@ -36,7 +40,7 @@
 				$id2 = get_field('bloqueNoticias3', 'option');
 				// the query
 				$args = array(
-						'posts_per_page'	=> 3,
+						'posts_per_page'	=> 5,
 						'cat'				=> $id2, 
 					);
 				$consulta = new WP_Query( $args ); ?>
@@ -44,11 +48,16 @@
 					<!-- the loop -->
 					<?php while ( $consulta->have_posts() ) : $consulta->the_post(); ?>
 						<div class="Noticias-noticia">
-							<figure>
-								<?php the_post_thumbnail(); ?>
-							</figure>
+							<a href="<?php the_permalink(); ?>">
+								<figure>
+									<?php the_post_thumbnail(); ?>
+								</figure>
+							</a>
+
 							<div class="texto">
-								<h2 class="Noticias-titulo"><?php the_title(); ?></h2>
+								<a href="<?php the_permalink(); ?>">
+									<h2 class="Noticias-titulo"><?php the_title(); ?></h2>
+								</a>
 								<p class="Noticias-fecha">Lunes 19 de enero de 2015</p>
 							</div>
 						</div>

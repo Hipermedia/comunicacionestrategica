@@ -83,16 +83,16 @@ if( function_exists('acf_add_options_page') ) {
 	));
 
 	// Columnas de opinion
-	acf_add_options_sub_page(array(
-		'title' 	=> 'Columnas de opinion',
-		'parent_slug'	=> 'theme-general-settings',
-	));
+	// acf_add_options_sub_page(array(
+	// 	'title' 	=> 'Columnas de opinion',
+	// 	'parent_slug'	=> 'theme-general-settings',
+	// ));
 
 	// Columna hoy
-	acf_add_options_sub_page(array(
-		'title' 	=> 'Columna hoy',
-		'parent_slug'	=> 'theme-general-settings',
-	));
+	// acf_add_options_sub_page(array(
+	// 	'title' 	=> 'Columna hoy',
+	// 	'parent_slug'	=> 'theme-general-settings',
+	// ));
 
 	// Análisis
 	acf_add_options_sub_page(array(
@@ -614,3 +614,75 @@ function themejs() {
 $template_url = get_bloginfo( 'template_url' );
 	wp_enqueue_script( 'themejs', $template_url .'/js/theme.js', array('jquery'), '', 1);
 }
+
+
+
+
+
+
+/**
+ * To display number of posts.
+ *
+ * @param $postID current post/page id
+ *
+ * @return string
+ */
+function subh_get_post_view( $postID ) {
+	$count_key = 'post_views_count';
+	$count     = get_post_meta( $postID, $count_key, true );
+	if ( $count == '' ) {
+		delete_post_meta( $postID, $count_key );
+		add_post_meta( $postID, $count_key, '0' );
+
+		return '0 View';
+	}
+
+	return $count . ' Views';
+}
+
+/**
+ * To count number of views and store in database.
+ *
+ * @param $postID currently viewed post/page
+ */
+function subh_set_post_view( $postID ) {
+	$count_key = 'post_views_count';
+	$count     = (int) get_post_meta( $postID, $count_key, true );
+	if ( $count < 1 ) {
+		delete_post_meta( $postID, $count_key );
+		add_post_meta( $postID, $count_key, '0' );
+	} else {
+		$count++;
+		update_post_meta( $postID, $count_key, (string) $count );
+	}
+}
+
+/**
+ * Add a new column in the wp-admin posts list
+ *
+ * @param $defaults
+ *
+ * @return mixed
+ */
+function subh_posts_column_views( $defaults ) {
+	$defaults['post_views'] = __( 'Views' );
+
+	return $defaults;
+}
+
+/**
+ * Display the number of views for each posts
+ *
+ * @param $column_name
+ * @param $id
+ *
+ * @return void simply echo out the number of views
+ */
+function subh_posts_custom_column_views( $column_name, $id ) {
+	if ( $column_name === 'post_views' ) {
+		echo subh_get_post_view( get_the_ID() );
+	}
+}
+
+add_filter( 'manage_posts_columns', 'subh_posts_column_views' );
+add_action( 'manage_posts_custom_column', 'subh_posts_custom_column_views', 5, 2 );

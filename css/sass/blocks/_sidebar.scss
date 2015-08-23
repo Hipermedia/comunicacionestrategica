@@ -3,10 +3,12 @@
 /*------------------------------------------------*/
 
 
-.Sidebar {
+.Sidebar-portada {
 	width: 30%;
 	float: left;
 	display: block;
+	/*padding: 0;*/
+	
 	@media (max-width: $tablet-width) {
 		width: 100%;
 		float: none;

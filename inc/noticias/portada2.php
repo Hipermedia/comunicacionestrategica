@@ -38,7 +38,7 @@
 				$id2 = get_field('bloqueNoticias2', 'option');
 				// the query
 				$args = array(
-						'posts_per_page'	=> 3,
+						'posts_per_page'	=> 5,
 						'cat'				=> $id2, 
 					);
 				$consulta = new WP_Query( $args ); ?>
