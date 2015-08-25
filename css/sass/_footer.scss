@@ -7,7 +7,6 @@
 ----------------------------------------------- */
 
 .Footer {
-	background: #EFEFEF;
 
 	.Footer-contenedor { 
 		background: $footer-bg; 
@@ -83,7 +82,7 @@
 		.Newsletter {
 			margin: 0;
 			width: 100%;
-			background: #4A4A4A;
+			background: $footer-bg;;
 			
 			input {
 				@media (max-width: 350px) {

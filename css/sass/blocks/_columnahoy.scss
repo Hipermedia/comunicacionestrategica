@@ -3,7 +3,7 @@
 /*------------------------------------------------*/
 
 .SidebarColumnaHoy {
-	background: #EBEBEB;
+	background: $bg-color-containers;
 	margin: 0 0.5rem;
 	padding-bottom: 1rem;
 	@media (max-width: $tablet-width) {
@@ -11,9 +11,9 @@
 	}
 
 	.h2 {
-		background: #C2C2C2;
+		background: $block-details2;
 		margin: 0;
-		color: #FEFEFE;
+		color: $main-color-text;
 		font-size: 1.3rem;
 		font-weight: bold;
 		padding: .4rem;
@@ -22,18 +22,13 @@
 	figure {
 		border-radius: 5px;
 		text-align: center;
-		background: #CFCFCF;
+		background: $block-details2;
 		margin: 1rem;
 		float: left;
 		width: 25%;
 		padding: .5rem;
 		@media (max-width: $desktop-width) {
 			width: 90%;
-		}
-
-		i {
-			color: #999999;
-			font-size: 5rem;
 		}
 	}
 
@@ -44,7 +39,7 @@
 	}
 
 	.SidebarColumnaHoy-titulo {
-		color: #5B5B5B;
+		color: $sub-color-text;
 		font-size: 1.3rem;
 		font-weight: bold;
 		padding-top: 1rem;
@@ -57,7 +52,7 @@
 	.SidebarColumnaHoy-columnista {
 		font-size: 0.8rem;
 		font-weight: bold;
-		color: #A0A0A0;
+		color: $sub-color-text2;
 		padding-top: .5rem;
 		@media (max-width: $desktop-width) {
 			text-align: center;

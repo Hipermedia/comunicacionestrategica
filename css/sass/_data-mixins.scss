@@ -11,9 +11,10 @@ $support-font: Arial, sans-serif;
 
 /* Colores
 ------------*/
-$bg-color-containers:	#EBEBEB;
-$bg-color-containers2:  #9C9C9C;
-$block-details:			#8A8A8A;
+$bg-color-containers:	#EBEBEB; /*gris clarito*/
+$bg-color-containers2:  #9C9C9C; /*gris oscuro*/
+$block-details:			#8A8A8A; /*gris entre clarito y oscuro*/
+$block-details2:		#C2C2C2; /*gris tono más bajo*/
 
 $body-bg: 				#efefef;
 $header-bg: 			#fff;
@@ -29,6 +30,9 @@ $main-color:        	#0054A8;	// color principal de la marca
 $main-color-dark:   	#002964;	
 $main-color-light:  	#2B7CCE;
 $main-color-text:   	#FFFFFF;	// color de texto en contraste con el color principal de la marca
+
+$sub-color-text:        #8A8A8A;    // tono mas oscuro
+$sub-color-text2:		#A0A0A0;     // más claro
 
 $support-color:     	#FF9800;	// color secundario de la marca
 

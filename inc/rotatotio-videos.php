@@ -5,28 +5,18 @@
 
 <!-- rotatotio-videos -->
 <div class="RotatorioVideos">
+	<?php if(have_rows('videoSlider', 'option')) : ?>
 	<div id="cover-slider-videos" class="flexslider">
 	  <ul class="slides">
+	  	<?php while(have_rows('videoSlider', 'option')) : the_row(); ?>
 	    <li>
-	      <img src="http://lorempixel.com/output/city-q-c-350-350-6.jpg" />
-	      <p class="flex-caption RotatorioVideos-caption">Adventurer Cheesecake Brownie</p>
+	    	<a href="http://www.youtube.com/watch?v=<?php the_sub_field('video', 'option'); ?>" rel="wp-video-lightbox" title="">
+	      		<img src="http://img.youtube.com/vi/<?php the_sub_field('video', 'option'); ?>/0.jpg" />
+			</a> 
+	      	<p class="flex-caption RotatorioVideos-caption"><?php the_sub_field('titulo', 'option'); ?></p>
 	    </li>
-	    <li>
-	      <img src="http://lorempixel.com/output/city-q-c-350-350-6.jpg" />
-	      <p class="flex-caption RotatorioVideos-caption">Adventurer Lemon</p>
-	    </li>
-	    <li>
-	      <img src="http://lorempixel.com/output/city-q-c-350-350-6.jpg" />
-	      <p class="flex-caption RotatorioVideos-caption">Adventurer Donut</p>
-	    </li>
-	    <li>
-	      <img src="http://lorempixel.com/output/city-q-c-350-350-6.jpg" />
-	      <p class="flex-caption RotatorioVideos-caption">Adventurer Caramel</p>
-	    </li>
-	    <li>
-	      <img src="http://lorempixel.com/output/city-q-c-350-350-6.jpg" />
-	      <p class="flex-caption RotatorioVideos-caption">Adventurer Caramel</p>
-	    </li>
+		<?php endwhile; ?>
 	  </ul>
 	</div>
+	<?php endif; ?>
 </div>
