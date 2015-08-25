@@ -6,12 +6,12 @@
 
 .primalMainNav {
 	display: block;
-	float: right;
-	margin: .5rem 1% 0;
-	max-width: 66%;
-	position: absolute;
+	margin: .5rem 0;
+	padding: .6rem 0;
 	right: 0;
 	top: 4rem;
+	background: #262626;
+	overflow: hidden;
 	@include transicion();
 	
 	@media (max-width: $tablet-width) {
@@ -41,7 +41,6 @@
 	ul {
 		list-style: none;
 		margin: 0;
-		padding-left: 0;
 
 		@media (max-width: $tablet-width) {
 			margin: 0;
@@ -69,13 +68,14 @@
 		}
 	}
 	a {
-		color: $nav-text-color;
+		text-transform: uppercase;
+		color: white;
 		background-color: $nav-bg-text-color;
 		display: block;
 		line-height: 2em;
 		padding: 0px .8em;
 		text-decoration: none;
-		font-size: 1.15rem;
+		font-size: 1rem;
 		margin: 0 .25rem;
 		@include redondea(4px);
 		@include transicion(0.25s);
@@ -117,3 +117,5 @@
         color: #444;
     }
 }
+
+.current-menu-item { font-weight: bold; }

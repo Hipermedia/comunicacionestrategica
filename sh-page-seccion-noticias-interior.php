@@ -20,8 +20,9 @@ get_header(); ?>
 		  		$id_internal = get_field('categoriaSeccionNoticias');
 		  		$args = array(
 								'posts_per_page'	=> 8,
-								'cat'				=> $id_internal, 
+								'category__and' 	=> array($id_internal,32) 
 							);
+				$category_name = get_cat_name( $id_internal );
 		  		$consulta = new WP_Query( $args ); ?>
 		  		<?php if ( $consulta->have_posts() ) : ?>
 		  			<!-- the loop -->
@@ -46,10 +47,10 @@ get_header(); ?>
 		  	<ul class="slides">
 		  		<?php 
 		  		// the query
-		  		$id_internal = get_field('categoriaSeccionNoticias');
+		  		$id_internal2 = get_field('categoriaSeccionNoticias');
 		  		$args = array(
 								'posts_per_page'	=> 8,
-								'cat' 				=> $id_internal, 
+								'category__and' 	=> array($id_internal2,32) 
 							);
 		  		$consulta = new WP_Query( $args ); ?>
 		  		<?php if ( $consulta->have_posts() ) : ?>
@@ -67,18 +68,17 @@ get_header(); ?>
 		  	</ul>
 		</div>
 	</section>
-
-	<aside class="Banner-slider">
-		<figure>
-			<img src="<?php the_field('bannerSlider','option'); ?>" alt="">
-		</figure>
-	</aside>
 </section>
 
 <section class="u-contenedor">
 	<section class="Noticias">
+		<aside class="BannerNoticias">
+			<figure>
+				<img src="<?php the_field('bannerNoticias1','option'); ?>" alt="">
+			</figure>
+		</aside>
 		<section class="Noticias-bloquePortada1">
-			<h2 class="Noticias-categoria">Estatales</h2>
+			<h2 class="Noticias-categoria"><?php echo $category_name; ?></h2>
 			<section class="Noticias-destacada">
 				<?php 
 				$id_internal_noticias = get_field('categoriaSeccionNoticias');
@@ -109,9 +109,9 @@ get_header(); ?>
 				<?php endif; ?>
 			</section>
 
-			<section class="Noticias-secundarias">
+			<section class="Noticias-secundarias u-noticias-secundarias-internas">
 				<?php 
-				$id2 = get_field('bloqueNoticias1', 'option');
+				$id2 = get_field('categoriaSeccionNoticias');
 				// the query
 				$args = array(
 						'cat'				=> $id2, 
@@ -120,7 +120,7 @@ get_header(); ?>
 				<?php if ( $consulta->have_posts() ) : ?>
 					<!-- the loop -->
 					<?php while ( $consulta->have_posts() ) : $consulta->the_post(); ?>
-						<div class="Noticias-noticia">
+						<div class="Noticias-noticia u-internalNew">
 							<a href="<?php the_permalink(); ?>">
 								<figure>
 									<?php the_post_thumbnail('large'); ?>
@@ -143,7 +143,7 @@ get_header(); ?>
 	<?php get_sidebar(); ?>
 </section>
 
-
+<!-- scripts para los sliders -->
 <script>
 	jQuery('#internal-slider-thumb-nav'+<?php echo $dif_id; ?>).flexslider({
 	 	animation: "slide",

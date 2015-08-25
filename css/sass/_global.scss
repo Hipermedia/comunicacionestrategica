@@ -17,6 +17,9 @@ body {
 	line-height: 1.5em; /* 24px */
 	background: $body-bg;
 	margin: 0;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: top center;
 }
 /* Links */
 a {

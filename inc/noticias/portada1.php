@@ -2,18 +2,21 @@
 /** Bloque 1 noticias en portada
 ------------------------------------------------------------------- */ 
 ?>
+
+<?php 
+$id = get_field('bloqueNoticias1', 'option');
+// the query
+$args = array(
+		'posts_per_page'	=> 1,
+		'cat'				=> $id, 
+	);
+$category_name = get_cat_name( $id );
+$consulta = new WP_Query( $args ); 
+?>
 <!-- portada1 -->
 <section class="Noticias-bloquePortada1">
-	<h2 class="Noticias-categoria">Estatales</h2>
+	<h2 class="Noticias-categoria"><?php echo $category_name; ?></h2>
 	<section class="Noticias-destacada">
-		<?php 
-		$id = get_field('bloqueNoticias1', 'option');
-		// the query
-		$args = array(
-				'posts_per_page'	=> 1,
-				'cat'				=> $id, 
-			);
-		$consulta = new WP_Query( $args ); ?>
 		<?php if ( $consulta->have_posts() ) : ?>
 			<!-- the loop -->
 			<?php while ( $consulta->have_posts() ) : $consulta->the_post(); ?>

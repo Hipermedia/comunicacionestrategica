@@ -30,6 +30,7 @@ Version: 1.0
 @import "_post.scss";
 @import "_page.scss";
 @import "_sidebar.scss";
+@import "_moneros.scss";
 
 /* Bloques 
 ------------------------------------------*/
@@ -52,3 +53,13 @@ Version: 1.0
 /* La personalización directa comienza aquí
 -------------------------------------------------------------- */
 
+.Moneros {
+	padding: 0 .5rem;
+	width: 70%;
+	float: left;
+	display: block;
+	@media (max-width: $tablet-width) {
+		width: 100%;
+		float: none;
+	}
+}

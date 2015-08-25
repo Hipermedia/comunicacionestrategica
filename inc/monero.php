@@ -17,7 +17,7 @@
 			<!-- the loop -->
 			<?php while ( $consulta->have_posts() ) : $consulta->the_post(); ?>
 			<?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID)); ?>
-				<img src="<?php echo $url; ?>" alt="">
+				<a href="<?php echo $url; ?>" rel="lightbox"><img src="<?php echo $url; ?>" alt=""></a>
 			<?php endwhile; ?>
 			<!-- end of the loop -->
 			<?php wp_reset_postdata(); ?>
@@ -26,7 +26,7 @@
 		<?php endif; ?>
 
 		<figcaption class="Monero-caption">
-			<a href="" class="Monero-botonMas btn">Ver anteriores</a>
+			<a href="<?php the_field('monerosSite','option'); ?>" class="Monero-botonMas btn">Ver anteriores</a>
 		</figcaption>
 	</figure>
 </section>

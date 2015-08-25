@@ -27,6 +27,9 @@
 		float: left;
 		width: 25%;
 		padding: .5rem;
+		@media (max-width: $desktop-width) {
+			width: 90%;
+		}
 
 		i {
 			color: #999999;
@@ -45,6 +48,10 @@
 		font-size: 1.3rem;
 		font-weight: bold;
 		padding-top: 1rem;
+		@media (max-width: $desktop-width) {
+			text-align: center;
+			width: 100%;
+		}
 	}
 
 	.SidebarColumnaHoy-columnista {
@@ -52,6 +59,11 @@
 		font-weight: bold;
 		color: #A0A0A0;
 		padding-top: .5rem;
+		@media (max-width: $desktop-width) {
+			text-align: center;
+			width: 100%;
+			margin-bottom: 1rem;
+		}
 	}
 
 	.btn {

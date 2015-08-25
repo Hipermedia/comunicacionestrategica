@@ -53,7 +53,7 @@
 <?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body style="background-image: url('<?php the_field('bgSite','option'); ?>');" <?php body_class(); ?>>
 
 <header id="header" class="Header" role="banner" >
     <section class="Header-contenido">
@@ -77,8 +77,13 @@
             
             <!-- Bloque utilitario -->
             <div class="Header-bloqueUtilitario">
-                <p class="p">Lunes 19 de enero de 2015</p>
-                <p class="p clima"><i class="fa fa-cloud"></i>Cielos Nubosos 13° en Xalapa, Ver.</p>
+                <?php
+                $dias = array("Domingo","Lunes","Martes","Miercoles","Jueves","Viernes","Sábado");
+                $meses = array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
+                $fecha = $dias[date('w')]." ".date('d')." de ".$meses[date('n')-1]. " del ".date('Y') ;
+                ?>
+                <p class="fecha"><?php echo $fecha; ?></p>
+                <!-- <p class="p clima"><i class="fa fa-cloud"></i>Cielos Nubosos 13° en Xalapa, Ver.</p> -->
                 <!-- Redes sociales -->
                 <?php primalSocialShare(); ?>
             </div>
@@ -86,7 +91,7 @@
         </aside>
         
         <!-- Menú principal -->  
-        <?php //primalNav(); ?>
+        <?php primalNav(); ?>
 
         
     </section>

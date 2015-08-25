@@ -18,7 +18,7 @@
 	<!-- banner sidebar 2 -->
 	<?php bannerSidebar2(); ?>
 	<!-- Análisis -->
-	<?php analisis(); ?>
+	<?php //analisis(); ?>
 	<!-- banner sidebar 3 -->
 	<?php bannerSidebar3(); ?>
 	<!-- banner sidebar 4 -->

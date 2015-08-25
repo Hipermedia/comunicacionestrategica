@@ -9,8 +9,7 @@
 		width: 50%;
 	}
 	@media (max-width: $smaller-width) {
-		width: 100%;
-		float: none;
+		display: none;
 	}
 
 	#cover-slider-videos { margin: 0; border-top: none; padding-right: .4rem}
@@ -41,7 +40,7 @@
 		padding: .3rem 0;
 		position: relative;
 		text-align: center;
-		background: #C3C3C3;
+		background: $bg-color-containers;
 		margin: -5rem 0 0 0;
 	}
 
@@ -50,7 +49,7 @@
 		bottom: 0;
 		padding-top: 1.35rem;
 		padding-bottom: 1rem;
-		background: #8A8A8A;
+		background: $block-details;
 	}
 }
 
@@ -76,14 +75,14 @@
 		}
 
 		.Monero-caption {
-			background: #C2C2C2;
+			background: $bg-color-containers;
 			padding: .5rem 0;
 			margin-top: -2.55rem;
 			position: relative;
 			z-index: 1;
 
 			.Monero-botonMas {
-				background: #4A4A4A;
+				background: $block-details;
 				text-align: center;
 				width: 80%;
 				margin: 0 auto;

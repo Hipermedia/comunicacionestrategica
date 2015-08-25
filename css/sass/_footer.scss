@@ -9,7 +9,13 @@
 .Footer {
 	background: #EFEFEF;
 
-	.Footer-contenedor { background: $footer-bg; padding: 0 2em; }
+	.Footer-contenedor { 
+		background: $footer-bg; 
+		padding: 0 2em; 
+		@media (max-width: 350px) {
+			padding: 0 .5rem;
+		}
+	}
 	
 	.Footer-bloque {
 		vertical-align: top;
@@ -50,6 +56,21 @@
 			font-size: 2rem;
 		}
 
+		.fa-whatsapp,.fa-phone,.fa-envelope {
+			@media (max-width: 350px) {
+				display: block;
+				margin: 0 auto;
+
+				h3 {
+					@media (max-width: 350px) {
+						text-align: center;
+						width: 100%;
+						margin: 0;
+					}
+				}
+			}
+		}
+
 		h3 {
 			text-align: left;
 			width: 90%;
@@ -63,6 +84,14 @@
 			margin: 0;
 			width: 100%;
 			background: #4A4A4A;
+			
+			input {
+				@media (max-width: 350px) {
+					width: 100%;
+					margin: 0 0 .5rem 0;	
+				}
+			}
+
 		}
 
 		.anuncio {

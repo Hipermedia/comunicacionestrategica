@@ -3,10 +3,8 @@
 /*------------------------------------------------*/
 
 .ColumnistasDestacados {
-	background: #9C9C9C;
-	@media (max-width: $smaller-width) {
-		display: none;
-	}
+	background: $bg-color-containers2;
+
 	
 	h4 {
 		background: #4A4A4A;
@@ -26,7 +24,7 @@
 		/*padding: 0 .8rem;*/
 
 		#cover-slider-columnistas { 
-			background: #9C9C9C; 
+			background: $bg-color-containers2; 
 			border: none; 
 			margin: 0;
 

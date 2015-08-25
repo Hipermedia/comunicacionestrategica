@@ -54,6 +54,12 @@ if( function_exists('acf_add_options_page') ) {
 
 	// cabecera
 	acf_add_options_sub_page(array(
+		'title' 	=> 'Generales',
+		'parent_slug'	=> 'theme-general-settings',
+	));
+
+	// cabecera
+	acf_add_options_sub_page(array(
 		'title' 	=> 'Cabecera',
 		'parent_slug'	=> 'theme-general-settings',
 	));
