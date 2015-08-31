@@ -112,7 +112,12 @@
 				bottom: 1.5em;
 				left: 0;
 				right: 0;
+			
+				&:hover {
+					background: $main-color;
+				}
 			}
+
 		}
 	}
 

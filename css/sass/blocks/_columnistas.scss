@@ -3,11 +3,11 @@
 /*------------------------------------------------*/
 
 .ColumnistasDestacados {
-	background: $bg-color-containers2;
-
+	background: #D7D7D7;
+	margin-top: -0.8rem;
 	
 	h4 {
-		background: #4A4A4A;
+		background: $main-color-dark;
 		color: #EAEAEA;
 		margin: 0;
 		text-align: center;
@@ -24,7 +24,7 @@
 		/*padding: 0 .8rem;*/
 
 		#cover-slider-columnistas { 
-			background: $bg-color-containers2; 
+			background: #D7D7D7; 
 			border: none; 
 			margin: 0;
 
@@ -81,17 +81,17 @@
 			}
 			
 			h2,h3 { margin: 0; padding: .4rem 0 .4rem .3rem; }
-
+			a { color: #333; }
 			.ColumnistasDestacados-nota {
-				color: #FEFEFE;
+				color: #333;
 				font-size: 1.5rem;
 				font-weight: bold;
 			}
 
 			.ColumnistasDestacados-nombre {
-				color: #C5C5C5;
+				color: #444;
 				font-size: 1rem;
-				font-weight: bold;
+				font-weight: normal;
 			}
 		}
 	}

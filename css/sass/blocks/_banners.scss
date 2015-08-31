@@ -10,9 +10,12 @@
 		padding-right: .8rem;
 		float: left;
 		width: 75%;
+		max-height: 112px;
+		overflow: hidden;
 
 		@media (max-width: $tablet-width) {
 			width: 100%;
+			max-height: auto;
 			padding: 0 0 .8rem 0;
 		}
 

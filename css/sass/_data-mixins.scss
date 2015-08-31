@@ -5,7 +5,7 @@
 /* Fuentes
 ------------*/
 $global-font: Arial, sans-serif;
-$main-font: sArial, sans-serif;
+$main-font: Arial, sans-serif;
 $support-font: Arial, sans-serif;
 
 
@@ -26,9 +26,9 @@ $link-hover-color: 		#2B7CCE;
 $text-color:   			#212121;	// color de texto base, principalmete usado en parrafos
 $support-text-color: 	#727272;
 
-$main-color:        	#0054A8;	// color principal de la marca
-$main-color-dark:   	#002964;	
-$main-color-light:  	#2B7CCE;
+$main-color:        	#E71F1F;	// color principal de la marca
+$main-color-dark:   	#921417;	
+$main-color-light:  	#ED4444;
 $main-color-text:   	#FFFFFF;	// color de texto en contraste con el color principal de la marca
 
 $sub-color-text:        #8A8A8A;    // tono mas oscuro
@@ -46,6 +46,10 @@ $nav-text-color-hover:		$main-color-text;
 $nav-bg-text-color-hover: 	$main-color;
 $nav-text-color-active:		$main-color;
 $nav-bg-text-color-active:	none;
+
+$red: #E71F1F;
+$red-dark: #921417;
+$red-light: #ED4444;
 
 
 /* Tamaños

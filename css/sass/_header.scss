@@ -2,7 +2,7 @@
 /*-----------------[HEADER]-----------------------*/
 /*------------------------------------------------*/
 .Header { 
-	padding: 0 .8rem;
+	padding: .75rem .8rem;
 	width: $desktop-width;
 	position: relative;
 	clear: both;
@@ -150,6 +150,8 @@
 				width: 25%;
 				float: left;
 				font-weight: normal;
+				height: 112px;
+
 				padding-bottom: .8rem;
 				@media (max-width: $tablet-width) {
 					width: 100%;
@@ -157,10 +159,10 @@
 				}
 
 				.fecha {
-					text-align: center;
+					text-align: left;
 					/*padding: .1rem 0 0 .3rem; */
-					padding-top: .5rem;
-					color: #707070;
+					padding: 1rem; 
+					color: #505050;
 					margin: 0; 
 					width: auto;
 					font-weight: bold;
@@ -195,7 +197,7 @@
 				}
 
 				.social {
-					padding: 0 25%;
+					padding: 0px 1rem;
 				}
 			}
 		}	
