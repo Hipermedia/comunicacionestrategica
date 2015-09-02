@@ -3,10 +3,12 @@
 /*------------------------------------------------*/
 
 .Page {
-	width: 100%;
+	width: 70%;
+	float: left;
 	vertical-align: top;
 	display: inline-block;
 	margin: 0 0 3rem;
+	padding: 0 1rem;
 
 	@media (max-width: $tablet-width ) {
 		width: 100%;

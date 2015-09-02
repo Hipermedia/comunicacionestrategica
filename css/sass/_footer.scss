@@ -21,7 +21,7 @@
 		width: 33%;
 		display: inline-block;
 		text-align: center;
-		color: #A0A0A0;
+		color: $footer-text;
 		padding: 1rem .5rem 0 .5rem;
 		@media (max-width: $tablet-width) {
 			width: 100%;
@@ -32,11 +32,20 @@
 
 			img {
 				width: 100%;
-				padding: .5rem 0;
+				padding-bottom: .5rem;
 			}
 		}
 
-		.condiciones { color: white; }
+		.condiciones { 
+			cursor: pointer;
+			/*color: white;*/
+			display: inline-block;
+			font-size: .9rem;
+
+			&:hover {
+				color: $main-color;
+			} 
+		}
 
 		.Footer-textito {
 			padding: .8rem;
@@ -49,7 +58,7 @@
 		}
 
 		i {
-			color: white;
+			/*color: white;*/
 			width: 10%;
 			display: inline-block;
 			font-size: 2rem;
@@ -82,7 +91,7 @@
 		.Newsletter {
 			margin: 0;
 			width: 100%;
-			background: $footer-bg;;
+			background: $bg-color-containers3;
 			
 			input {
 				@media (max-width: 350px) {

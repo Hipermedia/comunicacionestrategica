@@ -18,16 +18,16 @@
 			<a class="Footer-logo" href="<?php inicio_url(); ?>" id="logo-rr" class="Header-logoRR">
 			    <img src="<?php the_field('logoRR', 'option'); ?>" alt="<?php bloginfo('name'); ?>">
 			</a>
-			<a class="condiciones" href="">Aviso Legal</a>
-			<a class="condiciones" href="">Políticas de privacidad</a>
-			<a class="condiciones" href="">Código de ética</a>
+			<h4 class="condiciones" data-toggle="modal" data-target="#modalAviso">Aviso Legal</h4>
+			<h4 class="condiciones" data-toggle="modal" data-target="#modalPoliticas">Políticas de privacidad</h4>
+			<h4 class="condiciones" data-toggle="modal" data-target="#modalCodigo">Código de ética</h4>
 		</div>
 
 		<div class="Footer-bloque">
-			<p class="Footer-textito">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit neque, earum, magnam molestiae debitis modi repellat maxime exercitationem maiores odio!</p>
-			<i class="fa fa-whatsapp"></i><h3 class="Footer-contacto">WhatsApp 298009128</h3>
-			<i class="fa fa-phone"></i><h3 class="Footer-contacto">(228) 0000000, (228) 000000</h3>
-			<i class="fa fa-envelope"></i><h3 class="Footer-contacto">contacto@revistarepublica.com</h3>
+			<?php the_field('footerDescripcion', 'option'); ?>
+			<i class="fa fa-whatsapp"></i><h3 class="Footer-contacto"><?php the_field('whatsapp', 'option'); ?></h3>
+			<i class="fa fa-phone"></i><h3 class="Footer-contacto"><?php the_field('telefono', 'option'); ?></h3>
+			<i class="fa fa-envelope"></i><h3 class="Footer-contacto"><?php the_field('correo', 'option'); ?></h3>
 		</div>
 
 		<div class="Footer-bloque">
@@ -35,14 +35,66 @@
 			<?php primalSocialShare(); ?>
 			<h3 class="anuncio">¿Quieres anunciarte en nuestro sitio, click <a href="">aquí</a></h3>
 		</div>
-
-
     	
     	<aside class="Footer-creditos">
     		<a class="Footer-firmaSH" href="http://www.solucioneshipermedia.com/">Soluciones Hipermedia | Desarrollo web</a>
     	</aside>
-    </section>     
 
+    	<!-- Ventanas modales -->
+    	<!-- aviso legal -->
+    	<div class="modal fade" id="modalAviso" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    	  	<div class="modal-dialog" role="document">
+    	  	  	<div class="modal-content">
+    	  	  	  	<div class="modal-header">
+    	  	  	  	  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    	  	  	  	  <h4 class="modal-title" id="myModalLabel">Aviso legal</h4>
+    	  	  	  	</div>
+    	  	  	  	<div class="modal-body">
+						<?php the_field('avisoLegal', 'option'); ?>
+    	  	  	  	</div>
+    	  	  	  	<div class="modal-footer">
+    	  	  	  	  <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+    	  	  	  	</div>
+    	  	  	</div>
+    	  	</div>
+    	</div>
+
+    	<!-- políticas de privacidad -->
+    	<div class="modal fade" id="modalPoliticas" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    	  	<div class="modal-dialog" role="document">
+    	  	  	<div class="modal-content">
+    	  	  	  	<div class="modal-header">
+    	  	  	  	  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    	  	  	  	  <h4 class="modal-title" id="myModalLabel">Políticas de privacidad</h4>
+    	  	  	  	</div>
+    	  	  	  	<div class="modal-body">
+						<?php the_field('politicasPriv' , 'option'); ?>
+    	  	  	  	</div>
+    	  	  	  	<div class="modal-footer">
+    	  	  	  	  <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+    	  	  	  	</div>
+    	  	  	</div>
+    	  	</div>
+    	</div>
+
+    	<!-- código de ética -->
+    	<div class="modal fade" id="modalCodigo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    	  	<div class="modal-dialog" role="document">
+    	  	  	<div class="modal-content">
+    	  	  	  	<div class="modal-header">
+    	  	  	  	  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    	  	  	  	  <h4 class="modal-title" id="myModalLabel">Código de ética</h4>
+    	  	  	  	</div>
+    	  	  	  	<div class="modal-body">
+						<?php the_field('codigoEtica', 'option'); ?>
+    	  	  	  	</div>
+    	  	  	  	<div class="modal-footer">
+    	  	  	  	  <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+    	  	  	  	</div>
+    	  	  	</div>
+    	  	</div>
+    	</div>
+    </section>
 </footer>
 <!-- JS personalizados del tema -->
 <?php waypoints(); // Librería que detecta puntos en el scroll de pantalla ?>
@@ -51,12 +103,6 @@
 <?php // ripples(); // Complemento de Bootsrap - Material ?>
 <?php flexslider(); // Flexslider ?>
 <?php themejs(); // Los scripts personalizados del tema ?>
-
-
 <?php wp_footer(); ?>
-
-
-
-
 </body>
 </html>

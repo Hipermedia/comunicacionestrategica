@@ -27,7 +27,7 @@ get_header(); ?>
 	   
 		</article>
 	<?php endwhile; // end of the loop. ?>
-
+	<?php get_sidebar(); ?>
 </section>
 
 <?php get_footer(); ?>
