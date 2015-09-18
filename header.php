@@ -83,7 +83,16 @@
                 $fecha = $dias[date('w')]." ".date('d')." de ".$meses[date('n')-1]. " del ".date('Y') ;
                 ?>
                 <p class="fecha"><?php echo $fecha; ?></p>
-                <!-- <p class="p clima"><i class="fa fa-cloud"></i>Cielos Nubosos 13° en Xalapa, Ver.</p> -->
+
+                <!-- Plantilla de tarjeta de clima -->
+                <div class="clima">
+                    <template id="Template-ciudad">
+                        <img data-icon src="" alt="" class="img Card-image">
+                        <h4 data-temp="current" class="temp Card-temp"></h4>
+                        <h3 data-city class="ciudad Card-title"></h3>
+                    </template>
+                </div>
+
                 <!-- Redes sociales -->
                 <?php primalSocialShare(); ?>
             </div>

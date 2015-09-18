@@ -59,6 +59,7 @@
 
 		i {
 			/*color: white;*/
+			padding-right: 1rem;
 			width: 10%;
 			display: inline-block;
 			font-size: 2rem;
@@ -105,6 +106,16 @@
 		.anuncio {
 			font-size: 1rem;
 			padding-top: 1rem;
+		}
+
+		.social {
+
+			a {
+
+				i {
+					margin: 0 1%;
+				}
+			}
 		}
 	}
 

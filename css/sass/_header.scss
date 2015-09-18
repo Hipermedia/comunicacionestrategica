@@ -159,10 +159,10 @@
 				}
 
 				.fecha {
-					text-align: left;
+					/*text-align: center;*/
 					/*padding: .1rem 0 0 .3rem; */
-					padding: 1rem; 
-					color: #505050;
+					padding: .5rem .8rem 0; 
+					color: $sub-color-text;
 					margin: 0; 
 					width: auto;
 					font-weight: bold;
@@ -174,30 +174,41 @@
 					 } 
 				}
 
-
-
 				.clima {
-					color: #9E9E9E;
-					font-size: 13px;
-					float: left;
-					@media (max-width: $tablet-width) {
-					 	padding: 0;
-					 	float: none;
-					 }
+					padding: 0 .5rem;
+					color: $sub-color-text;
 
-					.fa-cloud {
-						padding-left: .3rem;
-						float: left;
-						color: #9E9E9E;
-						@media (max-width: $tablet-width) {
-						 	padding: 0;
-						 	float: none;
-						 }
-					}
+						.img {
+							width: 15%;
+							display: inline-block;
+						}
+
+						.temp {
+							font-size: 14px;
+							font-weight: bold;
+							margin: 0;
+							width: 20%;
+							display: inline-block;
+							vertical-align: middle;
+						}
+
+						.ciudad {
+							font-size: 14px;
+							font-weight: bold;
+							margin: 0;
+							width: 60%;
+							display: inline-block;
+							vertical-align: middle;
+						}
+					
 				}
 
 				.social {
-					padding: 0px 1rem;
+					padding: 0 1rem .5rem;
+
+					i {
+						font-size: 2rem;
+					}
 				}
 			}
 		}	

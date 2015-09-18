@@ -626,6 +626,7 @@ $template_url = get_bloginfo( 'template_url' );
 
 
 
+
 /**
  * To display number of posts.
  *
