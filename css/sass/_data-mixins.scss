@@ -107,7 +107,12 @@ $margin-bloques: .5rem;
 	@include fancy-box-shadow;
 }
 
-
+@mixin fastTransicion($tiempo: 0.2s, $efecto: ease-in-out) {
+	-webkit-transition: all $tiempo $efecto;
+	   -moz-transition: all $tiempo $efecto;
+		 -o-transition: all $tiempo $efecto;
+		    transition: all $tiempo $efecto; 
+}
 
 /*-----------------------------------------------*/
 /* Funciones */

@@ -40,6 +40,10 @@ get_header(); ?>
 		<?php bannerMonero(); ?>
 
 	</section>
+
+<!-- 	<section class="u-contenedor">
+		<?php cardsTestimony(); ?>
+	</section> -->
 	
 	<!-- Tercera sección del home -->
 	<section class="u-contenedorCompleto">
@@ -84,11 +88,19 @@ get_header(); ?>
 				<?php bloqueNoticias7(); ?>
 				<!-- cover-banner-noticias6 -->
 			</div>
+
+			<div class="aux">
+				<!-- bloque noticias 6-->
+				<?php bloqueNoticias8(); ?>
+				<!-- bloque noticias 7-->
+				<?php bloqueNoticias9(); ?>
+				<!-- cover-banner-noticias6 -->
+			</div>
 			
 		</section>
 
 		<?php get_sidebar(); ?>
 
 	</section>
-
+<?php clima(); ?>
 <?php get_footer(); ?>

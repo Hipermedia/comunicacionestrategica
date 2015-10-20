@@ -3,7 +3,7 @@
 ------------------------------------------------------------------- */ 
 ?>
 <?php 
-$id = get_field('bloqueNoticias7', 'option');
+$id = get_field('bloqueNoticias8', 'option');
 // the query
 $args = array(
 		'posts_per_page'	=> 1,
@@ -38,7 +38,7 @@ $consulta = new WP_Query( $args );
 
 	<section class="Noticias-secundarias">
 		<?php 
-				$id2 = get_field('bloqueNoticias7', 'option');
+				$id2 = get_field('bloqueNoticias8', 'option');
 				// the query
 				$args = array(
 						'posts_per_page'	=> 4,

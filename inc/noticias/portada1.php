@@ -28,7 +28,7 @@ $consulta = new WP_Query( $args );
 				<a href="<?php the_permalink(); ?>">
 					<h2 class="Noticias-titulo"><?php the_title(); ?></h2>
 				</a>
-				<p class="Noticias-fecha">Lunes 19 de enero de 2015</p>
+				<p class="Noticias-fecha"><?php the_time(get_option('date_format')); ?></p>
 				<p class="Noticias-resumen"><?php the_excerpt(); ?></p>
 			<?php endwhile; ?>
 			<!-- end of the loop -->
@@ -59,7 +59,7 @@ $consulta = new WP_Query( $args );
 					<a href="<?php the_permalink(); ?>">
 						<h2 class="Noticias-titulo"><?php the_title(); ?></h2>
 					</a>
-					<p class="Noticias-fecha">Lunes 19 de enero de 2015</p>
+					<p class="Noticias-fecha"><?php the_time(get_option('date_format')); ?></p>
 				</div>
 			<?php endwhile; ?>
 			<!-- end of the loop -->

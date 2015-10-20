@@ -232,6 +232,10 @@ function colDestacados() {
 	get_template_part( 'inc/columnistas-destacados');
 }
 
+function cardsTestimony() {
+	get_template_part( 'inc/cards-testimony');
+}
+
 /* Bloques de noticias
  * ------------------------------------------------------------- */
 /* Bloque noticias 1 */
@@ -261,6 +265,14 @@ function bloqueNoticias6() {
 /* Bloque noticias 7 */
 function bloqueNoticias7() {
 	get_template_part( 'inc/noticias/portada7');
+}
+/* Bloque noticias 8 */
+function bloqueNoticias8() {
+	get_template_part( 'inc/noticias/portada8');
+}
+/* Bloque noticias 9 */
+function bloqueNoticias9() {
+	get_template_part( 'inc/noticias/portada9');
 }
 
 
@@ -375,13 +387,15 @@ function shbase_setup() {
 			//remove_menu_page( 'edit.php?post_type=page' );    //Pages
 			remove_menu_page( 'edit-comments.php' );          //Comments
 			//remove_menu_page( 'themes.php' );                 //Appearance
-			remove_menu_page( 'users.php' );                  //Users
+			//remove_menu_page( 'users.php' );                  //Users
 			remove_menu_page( 'options-general.php' );        //Settings
 			remove_menu_page( 'tools.php' );					//Tools
 			remove_menu_page( 'plugins.php' );					//Plugins
 			remove_menu_page( 'ot-settings' );					//OT Settings
-			remove_menu_page('edit.php?post_type=acf');			//ACF Settings
+			remove_menu_page('edit.php?post_type=acf-field-group');			//ACF Settings
 			remove_menu_page( 'wpcf7' );
+			remove_menu_page( 'WP-Lightbox-2' );
+			remove_menu_page( 'facebook-application-settings' );
 			
 			//SUBMENUES
 			remove_submenu_page( 'index.php', 'update-core.php' );
@@ -621,7 +635,11 @@ $template_url = get_bloginfo( 'template_url' );
 	wp_enqueue_script( 'themejs', $template_url .'/js/theme.js', array('jquery'), '', 1);
 }
 
-
+// Scripts del tema
+function clima() {
+$template_url = get_bloginfo( 'template_url' );
+	wp_enqueue_script( 'climajs', $template_url .'/js/clima.js', array('jquery'), '', 1);
+}
 
 
 
